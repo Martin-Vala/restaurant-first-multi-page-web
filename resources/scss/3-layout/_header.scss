@@ -1,6 +1,7 @@
 header {
     background: linear-gradient(rgb(255, 158, 1), rgb(255, 89, 0));
     position: fixed;
+    z-index: 100;
     width: 100%;
     nav {
         a.navbar-brand {

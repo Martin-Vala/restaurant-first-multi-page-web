@@ -68,6 +68,7 @@ body {
 header {
   background: linear-gradient(rgb(255, 158, 1), rgb(255, 89, 0));
   position: fixed;
+  z-index: 100;
   width: 100%;
 }
 header nav a.navbar-brand {
@@ -96,6 +97,12 @@ header nav ul li a.nav-link {
   color: rgb(255, 158, 1);
 }
 
+footer p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+
 /* BANNER SECTION */
 main section#banner {
   background-image: url("/resources/image/banner-img.jpg");
@@ -115,9 +122,13 @@ main section#banner h1 {
   font-size: 5rem;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+  padding: 1rem;
 }
 
 /* TOP THREE FOODS SECTION */
+main section#top-three-foods {
+  margin-bottom: 40px;
+}
 main section#top-three-foods h2 {
   text-align: center;
   font-size: 3rem;
@@ -159,4 +170,19 @@ main section#top-three-foods div.block div.block-element p {
 }
 main section#top-three-foods div.block div.block-element p button {
   float: right;
+}
+
+/* KDE NAS NAJDETE SECTION */
+main section#kde-nas-najdete h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: rgb(255, 158, 1);
+  color: black;
+}
+main section#kde-nas-najdete img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
