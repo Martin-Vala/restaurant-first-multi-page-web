@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,6 +64,7 @@ html {
 
 body {
   background-color: bisque;
+  font-family: "Inter", sans-serif;
 }
 
 h2 {
@@ -118,6 +120,7 @@ header nav a.navbar-brand {
   display: flex;
   align-items: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 header nav a.navbar-brand img {
   margin: 0 10px;
@@ -132,12 +135,12 @@ header nav ul li {
   margin: 0 10px;
   padding: 5px;
   border-radius: 10px;
-  border: 1px solid rgb(255, 204, 73);
+  border: 1px solid rgb(136, 132, 123);
+  text-align: center;
 }
 header nav ul li:hover {
-  background-color: rgb(255, 89, 0);
   border: 1px solid black;
-  transition: border 100ms linear, background-color 100ms linear;
+  transition: border 100ms linear;
 }
 header nav ul li a.nav-link {
   color: rgb(255, 158, 1);
