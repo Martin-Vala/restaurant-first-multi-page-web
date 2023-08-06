@@ -67,6 +67,8 @@ body {
 
 header {
   background: linear-gradient(rgb(255, 158, 1), rgb(255, 89, 0));
+  position: fixed;
+  width: 100%;
 }
 header nav a.navbar-brand {
   display: flex;
@@ -92,4 +94,69 @@ header nav ul li:hover {
 }
 header nav ul li a.nav-link {
   color: rgb(255, 158, 1);
+}
+
+/* BANNER SECTION */
+main section#banner {
+  background-image: url("/resources/image/banner-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main section#banner h1 {
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+/* TOP THREE FOODS SECTION */
+main section#top-three-foods h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: rgb(255, 158, 1);
+  color: black;
+}
+main section#top-three-foods div.block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+main section#top-three-foods div.block div.block-element {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+  width: 500px;
+}
+main section#top-three-foods div.block div.block-element h3 {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+main section#top-three-foods div.block div.block-element img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+}
+main section#top-three-foods div.block div.block-element p {
+  font-size: 1rem;
+  color: black;
+  float: left;
+  width: 100%;
+}
+main section#top-three-foods div.block div.block-element p button {
+  float: right;
 }/*# sourceMappingURL=main.css.map */

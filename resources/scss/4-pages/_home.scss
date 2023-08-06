@@ -1,0 +1,64 @@
+/* BANNER SECTION */
+main section#banner {
+    background-image: url("/resources/image/banner-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    h1 {
+        color: white;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        font-size: 5rem;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+}
+/* TOP THREE FOODS SECTION */
+main section#top-three-foods {
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding: 1rem;
+        background-color: rgb(255, 158, 1);
+        color: black;
+    }
+    div.block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        div.block-element {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+            padding: 15px;
+            width: 500px;
+            h3 {
+                color: black;
+                font-size: 2rem;
+                text-align: center;
+                text-decoration: underline;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 300px;
+                margin: 20px 0;
+            }
+            p {
+                font-size: 1rem;
+                color: black;
+                float: left;
+                width: 100%;
+                button {
+                    float: right;
+                }
+            }
+        }
+    }
+}
