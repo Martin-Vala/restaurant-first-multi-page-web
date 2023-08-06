@@ -4,3 +4,42 @@ html {
 body {
     background-color: bisque;
 }
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: rgb(255, 158, 1);
+    color: black;
+}
+/* CARDS */
+div.block-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    div.block-element {
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        padding: 15px;
+        width: 550px;
+        h3 {
+            color: black;
+            font-size: 2.2rem;
+            text-align: center;
+            text-decoration: underline;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.5rem;
+            color: black;
+            float: left;
+            width: 100%;
+        }
+    }
+}

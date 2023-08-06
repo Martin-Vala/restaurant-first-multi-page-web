@@ -3,6 +3,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
+    box-shadow: 0 1px 5px black;
     nav {
         a.navbar-brand {
             display: flex;
@@ -21,8 +22,11 @@ header {
                 margin: 0 10px;
                 padding: 5px;
                 border-radius: 10px;
+                border: 1px solid rgb(255, 204, 73);
                 &:hover {
                     background-color: rgb(255, 89, 0);
+                    border: 1px solid black;
+                    transition: border 100ms linear, background-color 100ms linear;
                 }
                 a.nav-link {
                     color:rgb(255, 158, 1);
