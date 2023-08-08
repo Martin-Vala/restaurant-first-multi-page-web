@@ -1,4 +1,58 @@
-/* NUDLE SECTION */
-main section#nudle p {
-    text-align: center;
+section.menu-block {
+    margin: 80px 0;
+    div.banner-menu {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div {
+            padding: 50px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 158, 1);
+            h2 {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+    div.banner-menu-tydenni {
+        background-image: url(/resources/image/menu-page/tydenni-menu-banner.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.banner-menu-poledni {
+        background-image: url(/resources/image/menu-page/poledni-menu-banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.text-menu {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        p {
+            margin: 20px 10px;
+            padding-bottom: 4px;
+            width: 700px;
+            border-bottom: 2px dotted rgb(54, 42, 42);
+            display: flex;
+            justify-content: space-between;
+            span.palive {
+                vertical-align: super;
+                background-color: goldenrod;
+                color: white;
+                font-size: 1rem;
+                padding: 1px 6px 1px 3px;
+                font-style: italic;
+            }
+            span.cena {
+                color: goldenrod;
+            }
+        }
+    }
 }
