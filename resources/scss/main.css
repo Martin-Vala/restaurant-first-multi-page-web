@@ -150,7 +150,11 @@ header nav ul li a.nav-link {
   color: rgb(255, 158, 1);
 }
 
+footer {
+  border-top: 1px solid grey;
+}
 footer > p {
+  font-size: 1rem;
   text-align: center;
   margin: 1rem;
 }
@@ -200,54 +204,77 @@ main section#kde-nas-najdete img {
      object-fit: cover;
 }
 
-section.menu-block {
+main section.menu-block {
   margin: 80px 0;
 }
-section.menu-block div.banner-menu {
+main section.menu-block div.banner-menu {
   width: 100%;
   height: 500px;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 }
-section.menu-block div.banner-menu div {
+main section.menu-block div.banner-menu div {
   padding: 50px 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 158, 1);
 }
-section.menu-block div.banner-menu div h2 {
+main section.menu-block div.banner-menu div h2 {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-section.menu-block div.banner-menu-tydenni {
+main section.menu-block div.banner-menu-tydenni {
   background-image: url(/resources/image/menu-page/tydenni-menu-banner.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section.menu-block div.banner-menu-poledni {
+main section.menu-block div.banner-menu-poledni {
   background-image: url(/resources/image/menu-page/poledni-menu-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section.menu-block div.text-menu {
+main section.menu-block div.text-menu {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-section.menu-block div.text-menu p {
-  margin: 20px 10px;
-  padding-bottom: 4px;
+main section.menu-block div.text-menu div.text-menu-meal {
   width: 700px;
+  margin: 20px 10px;
+  display: flex;
+}
+main section.menu-block div.text-menu div.text-menu-meal img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -12px 0;
+     object-position: -12px 0;
+  margin-right: 8px;
+  transition: transform 300ms linear, border-radius 300ms linear;
+}
+main section.menu-block div.text-menu div.text-menu-meal img:hover {
+  transform: scale(5);
+  border-radius: 0;
+}
+main section.menu-block div.text-menu div.text-menu-meal div {
+  width: 100%;
+}
+main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main {
+  width: 100%;
+  padding-bottom: 4px;
   border-bottom: 2px dotted rgb(54, 42, 42);
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-section.menu-block div.text-menu p span.palive {
+main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main span.palive {
   vertical-align: super;
   background-color: goldenrod;
   color: white;
@@ -255,6 +282,13 @@ section.menu-block div.text-menu p span.palive {
   padding: 1px 6px 1px 3px;
   font-style: italic;
 }
-section.menu-block div.text-menu p span.cena {
+main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main span.cena {
   color: goldenrod;
+  flex-shrink: 0;
+}
+main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
+  font-size: 1rem;
+  font-style: italic;
+  color: gray;
+  padding-top: 5px;
 }/*# sourceMappingURL=main.css.map */
