@@ -154,14 +154,74 @@ header nav ul li a.nav-link {
 }
 
 footer {
-  border-top: 1px solid grey;
+  background-color: rgb(255, 158, 1);
 }
-footer > p {
+footer div.footer-info-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+footer div.footer-info-block div {
+  text-align: center;
+  width: 0;
+  flex-grow: 1;
+}
+footer div.footer-info-block div + div {
+  border-left: 1px solid black;
+}
+footer div.footer-info-block div h3 {
+  font-size: 2rem;
+  margin: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+footer div.footer-info-block div p {
+  margin: 20px 30px;
+  line-height: 1.5;
+}
+footer div.footer-info-block div p span {
+  font-weight: bold;
+}
+footer div.footer-info-block div a {
+  text-decoration: none;
+}
+footer div.footer-info-block div a i {
+  color: #3b424f;
+  font-size: 50px;
+  display: block;
+  margin: 20px auto;
+  width: 50px;
+  transition: color 300ms linear;
+}
+footer div.footer-info-block div a i:hover {
+  animation: iconAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+footer div.footer-info-block div a i.fa-facebook:hover {
+  color: rgb(66, 103, 178);
+}
+footer div.footer-info-block div a i.fa-instagram:hover {
+  color: rgb(131, 58, 180);
+}
+footer div.footer-copyright-block {
+  padding: 1rem 0;
+  background-color: rgb(255, 89, 0);
+}
+footer div.footer-copyright-block p {
   font-size: 1rem;
   text-align: center;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  color: black;
 }
 
+@keyframes iconAnimation {
+  50% {
+    transform: scale(1.5);
+  }
+}
 /* BANNER SECTION */
 main section#banner {
   background-image: url("/resources/image/banner-img.jpg");

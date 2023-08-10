@@ -1,8 +1,66 @@
 footer {
-    border-top: 1px solid grey;
-    > p {
-        font-size: 1rem;
-        text-align: center;
-        margin: 1rem;
+    background-color: rgb(255, 158, 1);
+    div.footer-info-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-top: 2px solid rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(0, 0, 0);
+        div {
+            text-align: center;
+            width: 0;
+            flex-grow: 1;
+            &+div {
+                border-left: 1px solid black;
+            }
+            h3 {
+                font-size: 2rem;
+                margin: 20px;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            p {
+                margin: 20px 30px;
+                line-height: 1.5;
+                span {
+                    font-weight: bold;
+                }
+            }
+            a {
+                text-decoration: none;
+                i {
+                    color: #3b424f;
+                    font-size: 50px;
+                    display: block;
+                    margin: 20px auto;
+                    width: 50px;
+                    transition: color 300ms linear;
+                    &:hover {
+                        animation: iconAnimation;
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+                i.fa-facebook:hover {
+                    color: rgb(66, 103, 178);
+                }
+                i.fa-instagram:hover {
+                    color: rgb(131, 58, 180);
+                }
+            }
+        }
     }
+    div.footer-copyright-block {
+        padding: 1rem 0;
+        background-color: rgb(255, 89, 0);
+        p {
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: black;
+        }
+    } 
+}
+@keyframes iconAnimation{
+    50%{transform: scale(1.5);}
 }
