@@ -3,7 +3,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
-    box-shadow: 0 1px 5px black;
+    box-shadow: 0 0.0625rem 0.3125rem black;
     max-width: 1920px;
     nav {
         a.navbar-brand {
@@ -12,22 +12,24 @@ header {
             font-size: 2rem;
             font-weight: bold;
             img {
-                margin: 0 10px;
+                margin: 0 0.625rem;
+                width: 3.75rem;
+                height: 3.75rem;
             }
         }
         ul {
             margin-left: auto;
-            margin-right: 10px;
+            margin-right: 0.625rem;
             li {
                 font-size: 1.5rem;
                 background-color: rgb(255, 204, 73);
-                margin: 0 10px;
-                padding: 5px;
-                border-radius: 10px;
-                border: 1px solid rgb(136, 132, 123);
+                margin: 0 0.625rem;
+                padding: 0.3125rem;
+                border-radius: 0.625rem;
+                border: 0.0625rem solid rgb(136, 132, 123);
                 text-align: center;
                 &:hover {
-                    border: 1px solid black;
+                    border: 0.0625rem solid black;
                     transition: border 100ms linear;
                 }
                 a.nav-link {

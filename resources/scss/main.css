@@ -62,6 +62,11 @@ html {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 1540px) {
+  html {
+    font-size: 12px;
+  }
+}
 body {
   background-color: bisque;
   font-family: "Inter", sans-serif;
@@ -81,44 +86,12 @@ p {
   font-size: 1.5rem;
 }
 
-/* CARDS */
-div.block-card {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px;
-}
-div.block-card div.block-element {
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: white;
-  padding: 15px;
-  width: 550px;
-}
-div.block-card div.block-element h3 {
-  font-size: 2.2rem;
-  text-align: center;
-  text-decoration: underline;
-}
-div.block-card div.block-element img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 300px;
-  margin: 20px 0;
-}
-div.block-card div.block-element p {
-  font-size: 1.5rem;
-  float: left;
-  width: 100%;
-}
-
 header {
   background: linear-gradient(rgb(255, 158, 1), rgb(255, 89, 0));
   position: fixed;
   z-index: 100;
   width: 100%;
-  box-shadow: 0 1px 5px black;
+  box-shadow: 0 0.0625rem 0.3125rem black;
   max-width: 1920px;
 }
 header nav a.navbar-brand {
@@ -128,23 +101,25 @@ header nav a.navbar-brand {
   font-weight: bold;
 }
 header nav a.navbar-brand img {
-  margin: 0 10px;
+  margin: 0 0.625rem;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 header nav ul {
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 header nav ul li {
   font-size: 1.5rem;
   background-color: rgb(255, 204, 73);
-  margin: 0 10px;
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px solid rgb(136, 132, 123);
+  margin: 0 0.625rem;
+  padding: 0.3125rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid rgb(136, 132, 123);
   text-align: center;
 }
 header nav ul li:hover {
-  border: 1px solid black;
+  border: 0.0625rem solid black;
   transition: border 100ms linear;
 }
 header nav ul li a.nav-link {
@@ -158,8 +133,8 @@ footer div.footer-info-block {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-top: 2px solid rgb(0, 0, 0);
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-top: 0.125rem solid rgb(0, 0, 0);
+  border-bottom: 0.125rem solid rgb(0, 0, 0);
 }
 footer div.footer-info-block div {
   text-align: center;
@@ -167,16 +142,16 @@ footer div.footer-info-block div {
   flex-grow: 1;
 }
 footer div.footer-info-block div + div {
-  border-left: 1px solid black;
+  border-left: 0.0625rem solid black;
 }
 footer div.footer-info-block div h3 {
   font-size: 2rem;
-  margin: 20px;
+  margin: 1.25rem;
   font-weight: bold;
   text-decoration: underline;
 }
 footer div.footer-info-block div p {
-  margin: 20px 30px;
+  margin: 1.25rem 1.875rem;
   line-height: 1.5;
 }
 footer div.footer-info-block div p span {
@@ -186,13 +161,13 @@ footer div.footer-info-block div p a.kontakt-link:hover {
   color: rgb(6, 69, 173);
 }
 footer div.footer-info-block div a.icon-link {
+  display: block;
   text-decoration: none;
+  width: 3.125rem;
+  margin: 1.25rem auto;
 }
 footer div.footer-info-block div a.icon-link i {
-  font-size: 50px;
-  display: block;
-  margin: 20px auto;
-  width: 50px;
+  font-size: 3.125rem;
   transition: color 300ms linear;
 }
 footer div.footer-info-block div a.icon-link i:hover {
@@ -238,54 +213,32 @@ main section#banner h1 {
   width: 100%;
   text-align: center;
   font-size: 5rem;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 0.0625rem solid white;
+  border-bottom: 0.0625rem solid white;
   padding: 1rem;
-}
-
-/* TOP THREE FOODS SECTION */
-main section#top-three-foods {
-  margin-bottom: 40px;
-}
-main section#top-three-foods button {
-  float: right;
-}
-
-/* KDE NAS NAJDETE SECTION */
-main section#kde-nas-najdete h2 {
-  text-align: center;
-  font-size: 3rem;
-  padding: 1rem;
-  background-color: rgb(255, 158, 1);
-  color: black;
-}
-main section#kde-nas-najdete img {
-  width: 100%;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 main section.menu-block {
-  margin: 80px 0;
+  margin-top: 5rem;
+  margin-bottom: 3.125rem;
 }
 main section.menu-block div.banner-menu {
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
   display: flex;
   align-items: top;
   justify-content: center;
 }
 main section.menu-block div.banner-menu div {
-  padding: 50px 100px;
+  padding: 3.125rem 6.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 158, 1);
 }
 main section.menu-block div.banner-menu div h2 {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 0.0625rem solid black;
+  border-bottom: 0.0625rem solid black;
 }
 main section.menu-block div.banner-menu-tydenni {
   background-image: url(/resources/image/menu-page/tydenni-menu-banner.jpg);
@@ -300,25 +253,25 @@ main section.menu-block div.banner-menu-poledni {
   background-size: cover;
 }
 main section.menu-block div.text-menu {
-  margin-top: 30px;
+  margin: 1.875rem 1.25rem 0 1.25rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 main section.menu-block div.text-menu div.text-menu-meal {
-  width: 700px;
-  margin: 20px 10px;
+  width: 43.75rem;
+  margin: 1.25rem;
   display: flex;
 }
 main section.menu-block div.text-menu div.text-menu-meal img {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 1.875rem;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: -12px 0;
-     object-position: -12px 0;
-  margin-right: 8px;
+  -o-object-position: -0.75rem 0;
+     object-position: -0.75rem 0;
+  margin-right: 0.5rem;
   transition: transform 300ms linear, border-radius 300ms linear;
 }
 main section.menu-block div.text-menu div.text-menu-meal img:hover {
@@ -330,8 +283,8 @@ main section.menu-block div.text-menu div.text-menu-meal div {
 }
 main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main {
   width: 100%;
-  padding-bottom: 4px;
-  border-bottom: 2px dotted rgb(54, 42, 42);
+  padding-bottom: 0.25rem;
+  border-bottom: 0.125rem dotted rgb(54, 42, 42);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -341,7 +294,7 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main s
   background-color: goldenrod;
   color: white;
   font-size: 1rem;
-  padding: 1px 6px 1px 3px;
+  padding: 0.0625rem 0.375rem 0.0625rem 0.1875rem;
   font-style: italic;
 }
 main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main span.cena {
@@ -352,5 +305,5 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
   font-size: 1rem;
   font-style: italic;
   color: gray;
-  padding-top: 5px;
+  padding-top: 0.3125rem;
 }/*# sourceMappingURL=main.css.map */

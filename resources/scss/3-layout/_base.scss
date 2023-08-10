@@ -1,6 +1,11 @@
 html {
     font-size: 16px;
 }
+@media only screen and (max-width: 1540px) {
+    html {
+        font-size: 12px;
+    }
+}
 body {
     background-color: bisque;
     font-family: 'Inter', sans-serif;
@@ -16,34 +21,4 @@ h2 {
 }
 p {
     font-size: 1.5rem;
-}
-/* CARDS */
-div.block-card {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    div.block-element {
-        border: 2px solid black;
-        border-radius: 10px;
-        background-color: white;
-        padding: 15px;
-        width: 550px;
-        h3 {
-            font-size: 2.2rem;
-            text-align: center;
-            text-decoration: underline;
-        }
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 300px;
-            margin: 20px 0;
-        }
-        p {
-            font-size: 1.5rem;
-            float: left;
-            width: 100%;
-        }
-    }
 }

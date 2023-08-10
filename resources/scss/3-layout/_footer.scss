@@ -4,23 +4,23 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        border-top: 2px solid rgb(0, 0, 0);
-        border-bottom: 2px solid rgb(0, 0, 0);
+        border-top: 0.125rem solid rgb(0, 0, 0);
+        border-bottom: 0.125rem solid rgb(0, 0, 0);
         div {
             text-align: center;
             width: 0;
             flex-grow: 1;
             &+div {
-                border-left: 1px solid black;
+                border-left: 0.0625rem solid black;
             }
             h3 {
                 font-size: 2rem;
-                margin: 20px;
+                margin: 1.25rem;
                 font-weight: bold;
                 text-decoration: underline;
             }
             p {
-                margin: 20px 30px;
+                margin: 1.25rem 1.875rem;
                 line-height: 1.5;
                 span {
                     font-weight: bold;
@@ -32,12 +32,12 @@ footer {
                 }
             }
             a.icon-link {
+                display: block;
                 text-decoration: none;
+                width: 3.125rem;
+                margin: 1.25rem auto;
                 i {
-                    font-size: 50px;
-                    display: block;
-                    margin: 20px auto;
-                    width: 50px;
+                    font-size: 3.125rem;
                     transition: color 300ms linear;
                     &:hover {
                         animation: iconAnimation;
