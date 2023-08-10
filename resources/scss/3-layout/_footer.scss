@@ -25,11 +25,15 @@ footer {
                 span {
                     font-weight: bold;
                 }
+                a.kontakt-link {
+                    &:hover {
+                        color: rgb(6,69,173);
+                    }
+                }
             }
-            a {
+            a.icon-link {
                 text-decoration: none;
                 i {
-                    color: #3b424f;
                     font-size: 50px;
                     display: block;
                     margin: 20px auto;
@@ -57,7 +61,6 @@ footer {
             font-size: 1rem;
             text-align: center;
             margin-bottom: 1rem;
-            color: black;
         }
     } 
 }

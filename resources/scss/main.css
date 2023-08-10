@@ -67,6 +67,7 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 1920px;
   margin: 0 auto;
+  color: black;
 }
 
 h2 {
@@ -74,7 +75,6 @@ h2 {
   font-size: 3rem;
   padding: 1rem;
   background-color: rgb(255, 158, 1);
-  color: black;
 }
 
 p {
@@ -96,7 +96,6 @@ div.block-card div.block-element {
   width: 550px;
 }
 div.block-card div.block-element h3 {
-  color: black;
   font-size: 2.2rem;
   text-align: center;
   text-decoration: underline;
@@ -110,7 +109,6 @@ div.block-card div.block-element img {
 }
 div.block-card div.block-element p {
   font-size: 1.5rem;
-  color: black;
   float: left;
   width: 100%;
 }
@@ -184,26 +182,28 @@ footer div.footer-info-block div p {
 footer div.footer-info-block div p span {
   font-weight: bold;
 }
-footer div.footer-info-block div a {
+footer div.footer-info-block div p a.kontakt-link:hover {
+  color: rgb(6, 69, 173);
+}
+footer div.footer-info-block div a.icon-link {
   text-decoration: none;
 }
-footer div.footer-info-block div a i {
-  color: #3b424f;
+footer div.footer-info-block div a.icon-link i {
   font-size: 50px;
   display: block;
   margin: 20px auto;
   width: 50px;
   transition: color 300ms linear;
 }
-footer div.footer-info-block div a i:hover {
+footer div.footer-info-block div a.icon-link i:hover {
   animation: iconAnimation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-footer div.footer-info-block div a i.fa-facebook:hover {
+footer div.footer-info-block div a.icon-link i.fa-facebook:hover {
   color: rgb(66, 103, 178);
 }
-footer div.footer-info-block div a i.fa-instagram:hover {
+footer div.footer-info-block div a.icon-link i.fa-instagram:hover {
   color: rgb(131, 58, 180);
 }
 footer div.footer-copyright-block {
@@ -214,7 +214,6 @@ footer div.footer-copyright-block p {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: black;
 }
 
 @keyframes iconAnimation {
