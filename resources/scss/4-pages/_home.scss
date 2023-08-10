@@ -1,4 +1,4 @@
-/* BANNER SECTION */
+/* MAIN BANNER SECTION */
 main section#banner {
     background-image: url("./../../resources/image/banner-img.jpg");
     background-position: center;
@@ -17,5 +17,10 @@ main section#banner {
         border-top: 0.0625rem solid white;
         border-bottom: 0.0625rem solid white;
         padding: 1rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    main section#banner h1 {
+        font-size: 4rem;
     }
 }

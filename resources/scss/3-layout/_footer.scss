@@ -67,3 +67,12 @@ footer {
 @keyframes iconAnimation{
     50%{transform: scale(1.5);}
 }
+@media only screen and (max-width: 720px) {
+    div.footer-info-block div {
+        flex-basis: 100%;
+        &+div {
+            border-top: 1px solid black;
+            border-left-width: 0rem;
+        }
+    }
+}

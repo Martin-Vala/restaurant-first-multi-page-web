@@ -85,3 +85,19 @@ main section.menu-block {
         }
     }
 }
+@media only screen and (max-width: 720px) {
+    main section.menu-block div.banner-menu div {
+        background-color: transparent;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        h2 {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 590px) {
+    main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main span.palive {
+        vertical-align: baseline;
+    }
+}   
