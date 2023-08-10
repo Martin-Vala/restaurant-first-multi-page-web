@@ -223,7 +223,7 @@ footer div.footer-copyright-block p {
     transform: scale(1.5);
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 722px) {
   footer div.footer-info-block div {
     flex-basis: 100%;
     min-height: 205px;
