@@ -352,6 +352,8 @@ main section.images-section figure {
 main section.images-section figure div {
   border: 0.625rem outset gold;
   overflow: hidden;
+  width: 32rem;
+  height: 20rem;
 }
 main section.images-section figure div img {
   width: 32rem;
@@ -367,8 +369,10 @@ main section.images-section figure div img:hover {
   animation-fill-mode: forwards;
 }
 main section.images-section figure figcaption {
-  font-size: 1rem;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
   font-style: italic;
+  text-align: center;
 }
 
 @keyframes galerieHover {

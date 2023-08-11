@@ -9,6 +9,8 @@ main section.images-section {
         div {
             border: 0.625rem outset gold;
             overflow: hidden;
+            width: 32rem;
+            height: 20rem;
             img {
                 width: 32rem;
                 height: 20rem;
@@ -23,8 +25,10 @@ main section.images-section {
             }
         }
         figcaption {
-            font-size: 1rem;
+            margin-top: 0.3rem;
+            font-size: 1.2rem;
             font-style: italic;
+            text-align: center;
         }
     }
 }
