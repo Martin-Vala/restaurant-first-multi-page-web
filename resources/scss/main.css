@@ -127,7 +127,7 @@ header nav ul li a.nav-link {
 }
 
 /* MAIN BANNER SECTION */
-main section#banner {
+main section.banner {
   background-image: url("./../../resources/image/banner-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@ main section#banner {
   display: flex;
   align-items: center;
 }
-main section#banner h1 {
+main section.banner h1 {
   color: white;
   background-color: black;
   width: 100%;
@@ -149,7 +149,7 @@ main section#banner h1 {
 }
 
 @media only screen and (max-width: 500px) {
-  main section#banner h1 {
+  main section.banner h1 {
     font-size: 4rem;
   }
 }
@@ -337,5 +337,42 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
 @media only screen and (max-width: 590px) {
   main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main span.palive {
     vertical-align: baseline;
+  }
+}
+main section.images-section {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section.images-section figure {
+  margin: 1rem;
+}
+main section.images-section figure div {
+  border: 0.625rem outset gold;
+  overflow: hidden;
+}
+main section.images-section figure div img {
+  width: 32rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
+}
+main section.images-section figure div img:hover {
+  animation-name: galerieHover;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+main section.images-section figure figcaption {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+@keyframes galerieHover {
+  100% {
+    transform: scale(1.5);
   }
 }/*# sourceMappingURL=main.css.map */

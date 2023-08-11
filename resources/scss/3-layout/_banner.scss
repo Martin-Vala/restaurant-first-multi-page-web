@@ -1,5 +1,5 @@
 /* MAIN BANNER SECTION */
-main section#banner {
+main section.banner {
     background-image: url("./../../resources/image/banner-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ main section#banner {
     }
 }
 @media only screen and (max-width: 500px) {
-    main section#banner h1 {
+    main section.banner h1 {
         font-size: 4rem;
     }
 }
