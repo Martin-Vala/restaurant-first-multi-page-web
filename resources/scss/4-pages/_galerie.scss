@@ -15,7 +15,6 @@ main section.images-section {
                 width: 32rem;
                 height: 20rem;
                 object-fit: cover;
-                box-sizing: border-box;
                 &:hover {
                     animation-name: galerieHover;
                     animation-duration: 2s;
@@ -34,4 +33,46 @@ main section.images-section {
 }
 @keyframes galerieHover {
     100%{transform: scale(1.5);}
+}
+@media only screen and (max-width: 1313px) {
+    main section.images-section {
+        figure {
+            div {
+                width: 40vw;
+                height: 27vw;
+                img {
+                    width: 40vw;
+                    height: 27vw;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    main section.images-section {
+        figure {
+            div {
+                width: 80vw;
+                height: 54vw;
+                img {
+                    width: 80vw;
+                    height: 54vw;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    main section.images-section {
+        figure {
+            div {
+                width: 95vw;
+                height: 65vw;
+                img {
+                    width: 95vw;
+                    height: 65vw;
+                }
+            }
+        }
+    }
 }

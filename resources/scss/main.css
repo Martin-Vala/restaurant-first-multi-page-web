@@ -360,7 +360,6 @@ main section.images-section figure div img {
   height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
-  box-sizing: border-box;
 }
 main section.images-section figure div img:hover {
   animation-name: galerieHover;
@@ -378,5 +377,35 @@ main section.images-section figure figcaption {
 @keyframes galerieHover {
   100% {
     transform: scale(1.5);
+  }
+}
+@media only screen and (max-width: 1313px) {
+  main section.images-section figure div {
+    width: 40vw;
+    height: 27vw;
+  }
+  main section.images-section figure div img {
+    width: 40vw;
+    height: 27vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  main section.images-section figure div {
+    width: 80vw;
+    height: 54vw;
+  }
+  main section.images-section figure div img {
+    width: 80vw;
+    height: 54vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main section.images-section figure div {
+    width: 95vw;
+    height: 65vw;
+  }
+  main section.images-section figure div img {
+    width: 95vw;
+    height: 65vw;
   }
 }/*# sourceMappingURL=main.css.map */
