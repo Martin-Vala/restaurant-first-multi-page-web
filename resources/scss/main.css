@@ -149,8 +149,16 @@ main section.banner h1 {
 }
 
 @media only screen and (max-width: 500px) {
+  main section.banner {
+    background-image: url("./../../resources/image/banner-img-sm.jpg");
+  }
   main section.banner h1 {
     font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main section.banner {
+    background-image: url("./../../resources/image/banner-img-xs.jpg");
   }
 }
 footer {
@@ -334,9 +342,22 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
     width: 100%;
   }
 }
+@media only screen and (max-width: 600px) {
+  main section.menu-block div.banner-menu-tydenni {
+    background-image: url("./../../resources/image/menu-page/tydenni-menu-banner-sm.jpg");
+  }
+  main section.menu-block div.banner-menu-poledni {
+    background-image: url("./../../resources/image/menu-page/poledni-menu-banner-sm.jpg");
+  }
+}
 @media only screen and (max-width: 590px) {
   main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main span.palive {
     vertical-align: baseline;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main section.menu-block div.banner-menu-poledni {
+    background-image: url("./../../resources/image/menu-page/poledni-menu-banner-xs.jpg");
   }
 }
 main section.images-section {
