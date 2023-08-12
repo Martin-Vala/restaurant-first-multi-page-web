@@ -352,12 +352,12 @@ main section.images-section figure {
 main section.images-section figure div {
   border: 0.625rem outset gold;
   overflow: hidden;
-  width: 32rem;
-  height: 20rem;
+  width: 28vw;
+  height: 17vw;
 }
 main section.images-section figure div img {
-  width: 32rem;
-  height: 20rem;
+  width: 28vw;
+  height: 17vw;
   -o-object-fit: cover;
      object-fit: cover;
 }

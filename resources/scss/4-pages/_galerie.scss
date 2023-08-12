@@ -9,11 +9,11 @@ main section.images-section {
         div {
             border: 0.625rem outset gold;
             overflow: hidden;
-            width: 32rem;
-            height: 20rem;
+            width: 28vw;
+            height: 17vw;
             img {
-                width: 32rem;
-                height: 20rem;
+                width: 28vw;
+                height: 17vw;
                 object-fit: cover;
                 &:hover {
                     animation-name: galerieHover;
