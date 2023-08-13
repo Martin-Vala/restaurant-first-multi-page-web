@@ -421,6 +421,16 @@ main section.form-section form div .reset-button:hover {
     width: 70vw;
   }
 }
+@media only screen and (max-width: 500px) {
+  main section.form-section h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main section.form-section h2 {
+    font-size: 2rem;
+  }
+}
 main section.images-section {
   margin: 3rem;
   display: flex;
