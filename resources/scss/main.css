@@ -337,8 +337,8 @@ main section.form-section p {
 }
 main section.form-section h2 {
   background-color: transparent;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 0.125rem solid black;
+  border-bottom: 0.125rem solid black;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
@@ -347,21 +347,80 @@ main section.form-section h2 {
 main section.form-section form {
   margin: 1rem 10vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 main section.form-section form div {
-  margin: 2rem;
+  margin: 2rem 3rem;
 }
 main section.form-section form div label {
   display: block;
   padding-bottom: 0.5rem;
 }
 main section.form-section form div input, main section.form-section form div select {
-  width: 300px;
+  width: 18.75rem;
   padding: 1rem;
+  border-radius: 1rem;
+  border: 0.125rem solid rgba(55, 52, 52, 0.5);
+  font-size: 1.3rem;
+}
+main section.form-section form div .form-button {
+  width: 12.5rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  transition: background-color 100ms linear, color 100ms linear;
+}
+main section.form-section form div .form-button:hover {
+  border: 0.125rem solid black;
+  cursor: pointer;
+  background-color: darkgreen;
+  color: white;
+}
+main section.form-section form div .reset-button:hover {
+  background-color: darkred;
 }
 
+@media only screen and (max-width: 1630px) {
+  main section.form-section form {
+    margin: 1rem 7vw;
+  }
+}
+@media only screen and (max-width: 1540px) {
+  main section.form-section form {
+    margin: 1rem 12vw;
+  }
+}
+@media only screen and (max-width: 1290px) {
+  main section.form-section form {
+    margin: 1rem 10vw;
+  }
+}
+@media only screen and (max-width: 1225px) {
+  main section.form-section form {
+    margin: 1rem 7vw;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  main section.form-section {
+    margin: 3rem 0;
+  }
+  main section.form-section form {
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 932px) {
+  main section.form-section form {
+    margin: 1rem 7vw;
+  }
+}
+@media only screen and (max-width: 711px) {
+  main section.form-section form {
+    margin: 1rem 2rem;
+  }
+  main section.form-section form div input, main section.form-section form div select {
+    width: 70vw;
+  }
+}
 main section.images-section {
   margin: 3rem;
   display: flex;

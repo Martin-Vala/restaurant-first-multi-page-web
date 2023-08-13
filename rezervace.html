@@ -62,16 +62,16 @@
       <section class="form-section">
         <p>- Rezervace -</p>
         <h2>REZERVOVAT STŮL</h2>
-        <form>
+        <form action="" method="post">
           <!-- DATE INPUT -->
           <div> 
             <label for="date">Datum</label>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" required>
           </div>
           <!-- TIME INPUT -->
           <div> 
             <label for="time">Čas</label>
-            <select id="time">
+            <select id="time" name="time">
               <option value="11:00">11:00</option>
               <option value="11:30">11:30</option>
               <option value="12:00">12:00</option>
@@ -98,7 +98,7 @@
           <!-- NUMBER OF VISITORS INPUT -->
           <div>
             <label for="num-guest">Počet hostů</label>
-            <select id="num-guest">
+            <select id="num-guest" name="num-guest">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -114,25 +114,25 @@
           <!-- NAME INPUT -->
           <div>
             <label for="fname">Jméno</label>
-            <input type="text" id="fname" name="fname" placeholder="Honza">
+            <input type="text" id="fname" name="fname" placeholder="Honza" required>
           </div>
           <!-- TEL INPUT -->
           <div>
             <label for="phone">Telefon</label>
-            <input type="tel" id="phone" name="phone" placeholder="763254342">
+            <input type="tel" id="phone" name="phone" placeholder="763254342" required>
           </div>
           <!-- EMAIL INPUT -->
           <div>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="honza.novotny@email.cz">
+            <input type="email" id="email" name="email" placeholder="honza.novotny@email.cz" required>
           </div>
           <!-- RESET INPUT -->
           <div>
-            <input type="reset">
+            <input class="form-button reset-button" type="reset">
           </div>
           <!-- SUBMIT INPUT -->
           <div>
-            <input type="submit">
+            <input class="form-button submit-button" type="submit">
           </div>
         </form>
       </section>
