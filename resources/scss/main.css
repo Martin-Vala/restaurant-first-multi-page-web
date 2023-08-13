@@ -325,6 +325,43 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
     vertical-align: baseline;
   }
 }
+main section.form-section {
+  margin: 3rem;
+}
+main section.form-section p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 89, 0, 0.8);
+  font-style: italic;
+  font-size: 1.3rem;
+}
+main section.form-section h2 {
+  background-color: transparent;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+main section.form-section form {
+  margin: 1rem 10vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main section.form-section form div {
+  margin: 2rem;
+}
+main section.form-section form div label {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+main section.form-section form div input, main section.form-section form div select {
+  width: 300px;
+  padding: 1rem;
+}
+
 main section.images-section {
   margin: 3rem;
   display: flex;
