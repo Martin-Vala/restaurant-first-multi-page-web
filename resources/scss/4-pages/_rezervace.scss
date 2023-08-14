@@ -1,20 +1,5 @@
 main section.form-section {
     margin: 3rem;
-    p {
-        text-align: center;
-        margin-bottom: 0.5rem;
-        color: rgba(255, 89, 0, 0.8);
-        font-style: italic;
-        font-size: 1.3rem;
-    }
-    h2 {
-        background-color: transparent;
-        border-top: 0.125rem solid black;
-        border-bottom: 0.125rem solid black;
-        width: fit-content;
-        margin: 0 auto;
-        padding: 0.8rem;
-    }
     form {
         margin: 1rem 10vw;
         display: flex;

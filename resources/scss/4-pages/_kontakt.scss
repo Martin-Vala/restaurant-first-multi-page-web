@@ -1,0 +1,49 @@
+main section.kde-sidlime-section {
+    margin: 3rem;
+    div.kontakt-boxes {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        div.kontakt-box {
+            background-color: rgb(255, 218, 149);
+            border: 2px solid rgb(173, 111, 17);
+            box-shadow: 0 0 7px rgb(156, 130, 13);
+            padding: 0.5rem;
+            margin: 1rem;
+            width: 300px;
+            height: 230px;
+            box-sizing: border-box;
+            div.kontakt-box-info {
+                border: 2px dotted rgb(173, 111, 17);
+                padding: 1rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                i {
+                    font-size: 1.5rem;
+                    color: white;
+                    position: absolute;
+                    padding: 1rem 1.8rem;
+                    border-bottom-left-radius: 50%;
+                    border-bottom-right-radius: 50%;
+                    background-color: rgb(255, 158, 1);
+                    align-self: center;
+                    transform: translateY(-85px);
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    color: rgb(36, 36, 36);
+                }
+            }
+        }
+    }
+}
