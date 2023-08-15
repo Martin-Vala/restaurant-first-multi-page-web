@@ -565,7 +565,8 @@ main section.map-section h2 {
   margin-bottom: 2rem;
 }
 main section.map-section iframe {
-  width: 100%;
-  height: 30vw;
-  transform: translateY(0.125rem);
+  width: 100% !important;
+  height: 80vh !important;
+  transform: translateY(2px);
+  filter: grayscale(90%) invert(92%) contrast(90%);
 }/*# sourceMappingURL=main.css.map */
