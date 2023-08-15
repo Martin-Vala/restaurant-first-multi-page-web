@@ -54,3 +54,13 @@ main section.kde-sidlime-section {
         }
     }
 }
+main section.map-section {
+    h2 {
+        margin-bottom: 2rem;
+    }
+    iframe {
+        width: 100%;
+        height: 30vw;
+        transform: translateY(0.125rem);
+    }
+}

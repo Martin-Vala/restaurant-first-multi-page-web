@@ -7,10 +7,11 @@ main section.images-section {
     figure {
         margin: 1rem;
         div {
-            border: 0.625rem outset gold;
+            border: 0.625rem outset rgb(255, 158, 1);
             overflow: hidden;
             width: 28vw;
             height: 17vw;
+            box-shadow: 0 0 5px rgb(122, 84, 7);
             img {
                 width: 28vw;
                 height: 17vw;
