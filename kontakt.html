@@ -59,7 +59,7 @@
         <h1>KONTAKT</h1>
       </section>
       <!-- KDE SÍDLÍME SECTION -->
-      <section class="kde-sidlime-section">
+      <section class="kde-sidlime-section margin-separation">
         <p class="second-p">- Navštivte nás -</p>
         <h2 class="second-h2">KDE SÍDLÍME</h2>
         <div class="kontakt-boxes">
@@ -100,8 +100,40 @@
         </div>
       </section>
       <!-- KONTAKTNÍ FORMULÁŘ SECTION -->
-      <section class="kontakt-formular-section">
-
+      <section class="form-section margin-separation">
+        <p class="second-p">- Pošlete nám zprávu -</p>
+        <h2 class="second-h2">KONTAKTNÍ FORMULÁŘ</h2>
+        <!-- FORM -->
+        <form action="#" method="post">
+          <!-- NAME INPUT -->
+          <div>
+            <label for="fname">Jméno*</label>
+            <input type="text" id="fname" name="fname" placeholder="Honza" required>
+          </div>
+          <!-- EMAIL INPUT -->
+          <div>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="honza.novotny@email.cz" required>
+          </div>
+          <!-- TEL INPUT -->
+          <div>
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="763254342" pattern="[0-9]{9,12}">
+          </div>
+          <!-- TEXTAREA INPUT -->
+          <div>
+            <label for="message">Zpráva*</label>
+            <textarea id="message" name="message" rows="6" cols="30" placeholder="Zde zadejte svou zprávu"></textarea>
+          </div>
+          <!-- RESET INPUT -->
+          <div>
+            <input class="form-button reset-button" type="reset" value="Obnovit">
+          </div>
+          <!-- SUBMIT INPUT -->
+          <div>
+            <input class="form-button submit-button" type="submit" value="Odeslat zprávu">
+          </div>
+        </form>
       </section>
       <!-- MAP SECTION -->
       <section class="map-section">

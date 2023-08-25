@@ -11,12 +11,15 @@ main section.form-section {
                 display: block;
                 padding-bottom: 0.5rem;
             }
-            input, select {
+            input, select, textarea {
                 width: 18.75rem;
                 padding: 1rem;
                 border-radius: 1rem;
                 border: 0.125rem solid rgba(55, 52, 52, 0.5);
                 font-size: 1.3rem;
+            }
+            textarea#message {
+                width: 68rem;
             }
             .form-button {
                 width: 12.5rem;

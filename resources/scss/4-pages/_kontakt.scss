@@ -1,5 +1,7 @@
-main section.kde-sidlime-section {
+main section.margin-separation {
     margin: 3rem;
+}
+main section.kde-sidlime-section {
     div.kontakt-boxes {
         margin: 2rem 0;
         display: flex;
@@ -55,6 +57,9 @@ main section.kde-sidlime-section {
         }
     }
 }
+
+/* Kontaktní formulář section - css in _rezervace.scss */
+
 main section.map-section {
     h2 {
         margin-bottom: 2rem;
