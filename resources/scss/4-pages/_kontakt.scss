@@ -14,6 +14,7 @@ main section.kde-sidlime-section {
             width: 18.75rem;
             height: 14.375rem;
             box-sizing: border-box;
+            position: relative;
             div.kontakt-box-info {
                 border: 0.125rem dotted rgb(173, 111, 17);
                 padding: 1rem;
@@ -26,12 +27,12 @@ main section.kde-sidlime-section {
                     font-size: 1.5rem;
                     color: white;
                     position: absolute;
+                    top: 0;
                     padding: 1rem 1.8rem;
                     border-bottom-left-radius: 50%;
                     border-bottom-right-radius: 50%;
                     background-color: rgb(255, 158, 1);
                     align-self: center;
-                    transform: translateY(-5.3125rem);
                 }
                 h3 {
                     font-size: 1.5rem;
