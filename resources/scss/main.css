@@ -414,6 +414,14 @@ main section.form-section form div .reset-button:hover {
     margin: 1rem;
   }
 }
+@media only screen and (max-width: 1003px) and (min-width: 712px) {
+  main section.form-section form.kontakt-form div.input-data-block {
+    margin: 2rem 7rem;
+  }
+  main section.form-section form.kontakt-form div.input-data-block input, main section.form-section form.kontakt-form div.input-data-block textarea#message {
+    width: 43.25rem;
+  }
+}
 @media only screen and (max-width: 932px) {
   main section.form-section form {
     margin: 1rem 7vw;
@@ -423,17 +431,17 @@ main section.form-section form div .reset-button:hover {
   main section.form-section form {
     margin: 1rem 2rem;
   }
-  main section.form-section form div input, main section.form-section form div select {
+  main section.form-section form div input, main section.form-section form div select, main section.form-section form div textarea#message {
     width: 70vw;
   }
 }
 @media only screen and (max-width: 500px) {
-  main section.form-section h2 {
+  h2 {
     font-size: 2.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  main section.form-section h2 {
+  h2 {
     font-size: 2rem;
   }
 }
@@ -576,4 +584,10 @@ main section.map-section iframe {
   height: 80vh !important;
   transform: translateY(2px);
   filter: grayscale(90%) invert(92%) contrast(90%);
+}
+
+@media only screen and (min-width: 836px) and (max-width: 1084px) {
+  main section.kde-sidlime-section div.kontakt-boxes div.kontakt-box {
+    margin: 2rem 5vw;
+  }
 }/*# sourceMappingURL=main.css.map */

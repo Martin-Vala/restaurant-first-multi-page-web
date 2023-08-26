@@ -71,3 +71,8 @@ main section.map-section {
         filter: grayscale(90%) invert(92%) contrast(90%);
     }
 }
+@media only screen and (min-width: 836px) and (max-width: 1084px) {
+    main section.kde-sidlime-section div.kontakt-boxes div.kontakt-box {
+        margin: 2rem 5vw;
+    }
+}
