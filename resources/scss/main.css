@@ -85,6 +85,7 @@ h2 {
   font-size: 3rem;
   padding: 1rem;
   background-color: rgb(255, 158, 1);
+  line-height: 1.3;
 }
 
 p.second-p {
@@ -354,7 +355,7 @@ main section.form-section form {
   flex-wrap: wrap;
 }
 main section.form-section form div {
-  margin: 2rem 3rem;
+  margin: 1rem 3rem;
 }
 main section.form-section form div label {
   display: block;
@@ -416,7 +417,7 @@ main section.form-section form div .reset-button:hover {
 }
 @media only screen and (max-width: 1003px) and (min-width: 712px) {
   main section.form-section form.kontakt-form div.input-data-block {
-    margin: 2rem 7rem;
+    margin: 1rem 7rem;
   }
   main section.form-section form.kontakt-form div.input-data-block input, main section.form-section form.kontakt-form div.input-data-block textarea#message {
     width: 43.25rem;

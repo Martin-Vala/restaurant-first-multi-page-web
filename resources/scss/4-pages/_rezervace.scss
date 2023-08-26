@@ -6,7 +6,7 @@ main section.form-section {
         justify-content: center;
         flex-wrap: wrap;
         div {
-            margin: 2rem 3rem;
+            margin: 1rem 3rem;
             label {
                 display: block;
                 padding-bottom: 0.5rem;
@@ -70,7 +70,7 @@ main section.form-section {
 @media only screen and (max-width: 1003px) and (min-width: 712px) {
     main section.form-section form.kontakt-form {
         div.input-data-block {
-            margin: 2rem 7rem;
+            margin: 1rem 7rem;
             input, textarea#message {
                 width: 43.25rem;
             }
