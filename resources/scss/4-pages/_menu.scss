@@ -1,99 +1,104 @@
 main section.menu-block {
-    margin-top: 5rem;
-    margin-bottom: 3.125rem;
-    div.banner-menu {
+  margin-top: 5rem;
+  margin-bottom: 3.125rem;
+  div.banner-menu {
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    div {
+      padding: 3.125rem 6.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(255, 158, 1);
+    }
+  }
+  div.banner-menu-tydenni {
+    background-image: url(./../../resources/image/menu-page/tydenni-menu-banner.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div.banner-menu-poledni {
+    background-image: url(./../../resources/image/menu-page/poledni-menu-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div.text-menu {
+    margin: 1.875rem 1.25rem 0 1.25rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    div.text-menu-meal {
+      width: 43.75rem;
+      margin: 1.25rem;
+      display: flex;
+      img {
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 1.875rem;
+        object-fit: cover;
+        object-position: -0.75rem 0;
+        margin-right: 0.5rem;
+        transition: transform 300ms linear, border-radius 300ms linear;
+        &:hover {
+          transform: scale(5);
+          border-radius: 0;
+        }
+      }
+      div {
         width: 100%;
-        height: 31.25rem;
+      }
+      p.text-menu-meal-main {
+        width: 100%;
+        padding-bottom: 0.25rem;
+        border-bottom: 0.125rem dotted rgb(54, 42, 42);
         display: flex;
-        align-items: top;
-        justify-content: center;
-        div {
-            padding: 3.125rem 6.25rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(255, 158, 1);
+        justify-content: space-between;
+        align-items: flex-end;
+        span.palive {
+          vertical-align: super;
+          background-color: goldenrod;
+          color: white;
+          font-size: 1rem;
+          padding: 0.0625rem 0.375rem 0.0625rem 0.1875rem;
+          font-style: italic;
         }
-    }
-    div.banner-menu-tydenni {
-        background-image: url(./../../resources/image/menu-page/tydenni-menu-banner.jpg);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    div.banner-menu-poledni {
-        background-image: url(./../../resources/image/menu-page/poledni-menu-banner.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    div.text-menu {
-        margin: 1.875rem 1.25rem 0 1.25rem;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        div.text-menu-meal {
-            width: 43.75rem;
-            margin: 1.25rem;
-            display: flex;
-            img {
-                width: 3.75rem;
-                height: 3.75rem;
-                border-radius: 1.875rem;
-                object-fit: cover;
-                object-position: -0.75rem 0;
-                margin-right: 0.5rem;
-                transition: transform 300ms linear, border-radius 300ms linear;
-                &:hover {
-                    transform: scale(5);
-                    border-radius: 0;
-                }
-            }
-            div {
-                width: 100%;
-            }
-            p.text-menu-meal-main {
-                width: 100%;
-                padding-bottom: 0.25rem;
-                border-bottom: 0.125rem dotted rgb(54, 42, 42);
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                span.palive {
-                    vertical-align: super;
-                    background-color: goldenrod;
-                    color: white;
-                    font-size: 1rem;
-                    padding: 0.0625rem 0.375rem 0.0625rem 0.1875rem;
-                    font-style: italic;
-                }
-                span.cena {
-                    color: goldenrod;
-                    flex-shrink: 0;
-                }
-            }
-            p.text-menu-meal-info {
-                font-size: 1rem;
-                font-style: italic;
-                color: gray;
-                padding-top: 0.3125rem;
-            }
+        span.cena {
+          color: goldenrod;
+          flex-shrink: 0;
         }
+      }
+      p.text-menu-meal-info {
+        font-size: 1rem;
+        font-style: italic;
+        color: gray;
+        padding-top: 0.3125rem;
+      }
     }
+  }
 }
 @media only screen and (max-width: 720px) {
-    main section.menu-block div.banner-menu div {
-        background-color: transparent;
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        h2 {
-            width: 100%;
-        }
+  main section.menu-block div.banner-menu div {
+    background-color: transparent;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    h2 {
+      width: 100%;
     }
+  }
 }
 @media only screen and (max-width: 590px) {
-    main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-main span.palive {
-        vertical-align: baseline;
-    }
+  main
+    section.menu-block
+    div.text-menu
+    div.text-menu-meal
+    p.text-menu-meal-main
+    span.palive {
+    vertical-align: baseline;
+  }
 }

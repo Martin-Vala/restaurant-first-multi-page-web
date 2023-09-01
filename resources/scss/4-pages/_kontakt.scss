@@ -1,75 +1,75 @@
 /* Form section code is found in _forms.scss file */
 
 main section.kde-sidlime-section {
-    div.kontakt-boxes {
-        margin: 2rem 0;
+  div.kontakt-boxes {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    div.kontakt-box {
+      background-color: rgb(255, 218, 149);
+      border: 0.125rem solid rgb(173, 111, 17);
+      box-shadow: 0 0 0.4375rem rgb(156, 130, 13);
+      padding: 0.5rem;
+      margin: 1rem;
+      width: 18.75rem;
+      height: 14.375rem;
+      box-sizing: border-box;
+      position: relative;
+      div.kontakt-box-info {
+        border: 0.125rem dotted rgb(173, 111, 17);
+        padding: 1rem;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
-        div.kontakt-box {
-            background-color: rgb(255, 218, 149);
-            border: 0.125rem solid rgb(173, 111, 17);
-            box-shadow: 0 0 0.4375rem rgb(156, 130, 13);
-            padding: 0.5rem;
-            margin: 1rem;
-            width: 18.75rem;
-            height: 14.375rem;
-            box-sizing: border-box;
-            position: relative;
-            div.kontakt-box-info {
-                border: 0.125rem dotted rgb(173, 111, 17);
-                padding: 1rem;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                i {
-                    font-size: 1.5rem;
-                    color: white;
-                    position: absolute;
-                    top: 0;
-                    padding: 1rem 1.8rem;
-                    border-bottom-left-radius: 50%;
-                    border-bottom-right-radius: 50%;
-                    background-color: rgb(255, 158, 1);
-                    align-self: center;
-                }
-                h3 {
-                    font-size: 1.5rem;
-                    margin: 1rem;
-                    font-weight: bold;
-                }
-                p {
-                    font-size: 1.2rem;
-                    line-height: 1.5;
-                    color: rgb(36, 36, 36);
-                    a {
-                        color: inherit;
-                        text-decoration: none;
-                        &:hover {
-                            color: rgb(154, 105, 0);
-                        }
-                    }
-                }
-            }
+        text-align: center;
+        i {
+          font-size: 1.5rem;
+          color: white;
+          position: absolute;
+          top: 0;
+          padding: 1rem 1.8rem;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          background-color: rgb(255, 158, 1);
+          align-self: center;
         }
+        h3 {
+          font-size: 1.5rem;
+          margin: 1rem;
+          font-weight: bold;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          color: rgb(36, 36, 36);
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              color: rgb(154, 105, 0);
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 main section.map-section {
-    h2 {
-        margin-bottom: 2rem;
-    }
-    iframe {
-        width: 100% !important;
-        height: 80vh !important;
-        transform: translateY(2px);
-        filter: grayscale(90%) invert(92%) contrast(90%);
-    }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  iframe {
+    width: 100% !important;
+    height: 80vh !important;
+    transform: translateY(2px);
+    filter: grayscale(90%) invert(92%) contrast(90%);
+  }
 }
 @media only screen and (min-width: 836px) and (max-width: 1084px) {
-    main section.kde-sidlime-section div.kontakt-boxes div.kontakt-box {
-        margin: 2rem 5vw;
-    }
+  main section.kde-sidlime-section div.kontakt-boxes div.kontakt-box {
+    margin: 2rem 5vw;
+  }
 }

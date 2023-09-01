@@ -1,79 +1,81 @@
 main section.images-section {
-    margin: 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    figure {
-        margin: 1rem;
-        div {
-            border: 0.3rem outset rgb(255, 158, 1);
-            overflow: hidden;
-            width: 28vw;
-            height: 17vw;
-            box-shadow: 0 0 5px rgb(122, 84, 7);
-            img {
-                width: 28vw;
-                height: 17vw;
-                object-fit: cover;
-                &:hover {
-                    animation-name: galerieHover;
-                    animation-duration: 2s;
-                    animation-timing-function: linear;
-                    animation-fill-mode: forwards;
-                }
-            }
+  margin: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  figure {
+    margin: 1rem;
+    div {
+      border: 0.3rem outset rgb(255, 158, 1);
+      overflow: hidden;
+      width: 28vw;
+      height: 17vw;
+      box-shadow: 0 0 5px rgb(122, 84, 7);
+      img {
+        width: 28vw;
+        height: 17vw;
+        object-fit: cover;
+        &:hover {
+          animation-name: galerieHover;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
         }
-        figcaption {
-            margin-top: 0.3rem;
-            font-size: 1.2rem;
-            font-style: italic;
-            text-align: center;
-        }
+      }
     }
+    figcaption {
+      margin-top: 0.3rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      text-align: center;
+    }
+  }
 }
 @keyframes galerieHover {
-    100%{transform: scale(1.5);}
+  100% {
+    transform: scale(1.5);
+  }
 }
 @media only screen and (max-width: 1313px) {
-    main section.images-section {
-        figure {
-            div {
-                width: 40vw;
-                height: 27vw;
-                img {
-                    width: 40vw;
-                    height: 27vw;
-                }
-            }
+  main section.images-section {
+    figure {
+      div {
+        width: 40vw;
+        height: 27vw;
+        img {
+          width: 40vw;
+          height: 27vw;
         }
+      }
     }
+  }
 }
 @media only screen and (max-width: 900px) {
-    main section.images-section {
-        figure {
-            div {
-                width: 80vw;
-                height: 54vw;
-                img {
-                    width: 80vw;
-                    height: 54vw;
-                }
-            }
+  main section.images-section {
+    figure {
+      div {
+        width: 80vw;
+        height: 54vw;
+        img {
+          width: 80vw;
+          height: 54vw;
         }
+      }
     }
+  }
 }
 @media only screen and (max-width: 500px) {
-    main section.images-section {
-        figure {
-            div {
-                width: 95vw;
-                height: 65vw;
-                img {
-                    width: 95vw;
-                    height: 65vw;
-                }
-            }
+  main section.images-section {
+    figure {
+      div {
+        width: 95vw;
+        height: 65vw;
+        img {
+          width: 95vw;
+          height: 65vw;
         }
+      }
     }
+  }
 }
