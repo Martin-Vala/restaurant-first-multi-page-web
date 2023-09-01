@@ -1,5 +1,5 @@
 /* Form section code is found in _forms.scss file */
-main section.kde-sidlime-section {
+main section.kontakt-boxes-section {
   div.kontakt-boxes {
     margin: 2rem 0;
     display: flex;
@@ -15,7 +15,7 @@ main section.kde-sidlime-section {
       height: 14.375rem;
       box-sizing: border-box;
       position: relative;
-      div.kontakt-box-info {
+      div.kontakt-box-inner {
         border: 0.125rem dotted rgb(173, 111, 17);
         padding: 1rem;
         height: 100%;
@@ -65,7 +65,7 @@ main section.map-section {
   }
 }
 @media only screen and (min-width: 836px) and (max-width: 1084px) {
-  main section.kde-sidlime-section div.kontakt-boxes div.kontakt-box {
+  main section.kontakt-boxes-section div.kontakt-boxes div.kontakt-box {
     margin: 2rem 5vw;
   }
 }
