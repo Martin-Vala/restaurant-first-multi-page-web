@@ -609,11 +609,11 @@ main section.images-section figure figcaption {
 }
 @media only screen and (max-width: 500px) {
   main section.images-section figure div {
-    width: 95vw;
+    width: 90vw;
     height: 65vw;
   }
   main section.images-section figure div img {
-    width: 95vw;
+    width: 90vw;
     height: 65vw;
   }
 }
