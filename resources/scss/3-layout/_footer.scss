@@ -1,9 +1,8 @@
 footer {
-  background-color: rgb(255, 158, 1);
   div.footer-info-block {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    background-color: rgb(255, 158, 1);
     border-top: 0.125rem solid rgb(0, 0, 0);
     border-bottom: 0.125rem solid rgb(0, 0, 0);
     div {
@@ -14,10 +13,7 @@ footer {
         border-left: 0.0625rem solid black;
       }
       h3 {
-        font-size: 2rem;
         margin: 1.25rem;
-        font-weight: bold;
-        text-decoration: underline;
       }
       p {
         margin: 1.25rem 1.875rem;

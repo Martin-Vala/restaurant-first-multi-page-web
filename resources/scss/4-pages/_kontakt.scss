@@ -1,5 +1,4 @@
 /* Form section code is found in _forms.scss file */
-
 main section.kde-sidlime-section {
   div.kontakt-boxes {
     margin: 2rem 0;
@@ -35,10 +34,8 @@ main section.kde-sidlime-section {
           background-color: rgb(255, 158, 1);
           align-self: center;
         }
-        h3 {
-          font-size: 1.5rem;
+        h4 {
           margin: 1rem;
-          font-weight: bold;
         }
         p {
           font-size: 1.2rem;
@@ -56,7 +53,6 @@ main section.kde-sidlime-section {
     }
   }
 }
-
 main section.map-section {
   h2 {
     margin-bottom: 2rem;
