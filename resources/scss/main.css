@@ -436,27 +436,26 @@ main section.menu-block {
   margin-top: 5rem;
   margin-bottom: 3.125rem;
 }
-main section.menu-block div.banner-menu {
+main section.menu-block div.heading-menu {
   width: 100%;
   height: 31.25rem;
   display: flex;
-  align-items: top;
   justify-content: center;
 }
-main section.menu-block div.banner-menu div {
+main section.menu-block div.heading-menu div {
   padding: 3.125rem 6.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 158, 1);
 }
-main section.menu-block div.banner-menu-tydenni {
+main section.menu-block div.heading-menu-tydenni {
   background-image: url(./../../resources/image/menu-page/tydenni-menu-banner.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
-main section.menu-block div.banner-menu-poledni {
+main section.menu-block div.heading-menu-poledni {
   background-image: url(./../../resources/image/menu-page/poledni-menu-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -519,13 +518,13 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
 }
 
 @media only screen and (max-width: 720px) {
-  main section.menu-block div.banner-menu div {
+  main section.menu-block div.heading-menu div {
     background-color: transparent;
     width: 100%;
     padding-right: 0;
     padding-left: 0;
   }
-  main section.menu-block div.banner-menu div h2 {
+  main section.menu-block div.heading-menu div h2 {
     width: 100%;
   }
 }
