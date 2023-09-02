@@ -1,5 +1,4 @@
 main section.form-section {
-  margin: 3rem;
   form {
     margin: 1rem 10vw;
     display: flex;
@@ -31,9 +30,11 @@ main section.form-section {
         &:hover {
           border: 0.125rem solid black;
           cursor: pointer;
-          background-color: darkgreen;
           color: white;
         }
+      }
+      .submit-button:hover {
+        background-color: darkgreen;
       }
       .reset-button:hover {
         background-color: darkred;
@@ -41,6 +42,7 @@ main section.form-section {
     }
   }
 }
+/* MEDIA QUERIES - ALL FORMS */
 @media only screen and (max-width: 1630px) {
   main section.form-section form {
     margin: 1rem 7vw;
@@ -69,17 +71,6 @@ main section.form-section {
     }
   }
 }
-@media only screen and (max-width: 1003px) and (min-width: 712px) {
-  main section.form-section form.kontakt-form {
-    div.input-data-block {
-      margin: 1rem 7rem;
-      input,
-      textarea#message {
-        width: 43.25rem;
-      }
-    }
-  }
-}
 @media only screen and (max-width: 932px) {
   main section.form-section form {
     margin: 1rem 7vw;
@@ -93,6 +84,18 @@ main section.form-section {
       select,
       textarea#message {
         width: 70vw;
+      }
+    }
+  }
+}
+/* KONTAKT FORM - MEDIA QUERIES */
+@media only screen and (max-width: 1003px) and (min-width: 712px) {
+  main section.form-section form.kontakt-form {
+    div.input-data-block {
+      margin: 1rem 7rem;
+      input,
+      textarea#message {
+        width: 43.25rem;
       }
     }
   }

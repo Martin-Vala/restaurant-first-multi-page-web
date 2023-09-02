@@ -79,18 +79,20 @@
       <section class="banner">
         <h1>REZERVACE ONLINE</h1>
       </section>
-      <!-- FORM SECTION -->
-      <section class="form-section">
+      <!-- FORM SECTION - RESERVATION -->
+      <section class="form-section margin-separation">
+        <!-- FORM HEADING -->
         <p class="second-p">- Rezervace -</p>
         <h2 class="second-h2">REZERVOVAT STŮL</h2>
-        <form action="" method="post">
+        <!-- FORM -->
+        <form action="" method="post" class="reservation-form">
           <!-- DATE INPUT -->
-          <div>
+          <div class="input-data-block">
             <label for="date">Datum</label>
             <input type="date" id="date" name="date" required />
           </div>
           <!-- TIME INPUT -->
-          <div>
+          <div class="input-data-block">
             <label for="time">Čas</label>
             <select id="time" name="time">
               <option value="11:00">11:00</option>
@@ -116,8 +118,8 @@
               <option value="21:00">21:00</option>
             </select>
           </div>
-          <!-- NUMBER OF VISITORS INPUT -->
-          <div>
+          <!-- NUMBER OF GUESTS INPUT -->
+          <div class="input-data-block">
             <label for="num-guest">Počet hostů</label>
             <select id="num-guest" name="num-guest">
               <option value="1">1</option>
@@ -133,12 +135,12 @@
             </select>
           </div>
           <!-- NAME INPUT -->
-          <div>
+          <div class="input-data-block">
             <label for="fname">Jméno</label>
             <input type="text" id="fname" name="fname" placeholder="Honza" required />
           </div>
           <!-- TEL INPUT -->
-          <div>
+          <div class="input-data-block">
             <label for="phone">Telefon</label>
             <input
               type="tel"
@@ -150,7 +152,7 @@
             />
           </div>
           <!-- EMAIL INPUT -->
-          <div>
+          <div class="input-data-block">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="honza.novotny@email.cz" required />
           </div>
