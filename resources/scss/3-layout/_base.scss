@@ -1,6 +1,11 @@
 html {
   font-size: 16px;
 }
+@media only screen and (min-width: 1921px) {
+  html {
+    font-size: 0.9vw;
+  }
+}
 @media only screen and (max-width: 1540px) {
   html {
     font-size: 12px;
@@ -9,7 +14,6 @@ html {
 body {
   background-color: bisque;
   font-family: "Inter", sans-serif;
-  max-width: 1920px;
   margin: 0 auto;
   color: black;
 }
