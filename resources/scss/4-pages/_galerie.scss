@@ -1,81 +1,75 @@
-main section.images-section {
+.media {
   margin: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  figure {
+  &__item {
     margin: 1rem;
-    div {
-      border: 0.3rem outset rgb(255, 158, 1);
-      overflow: hidden;
-      width: 28vw;
-      height: 17vw;
-      box-shadow: 0 0 5px rgb(122, 84, 7);
-      img {
-        width: 28vw;
-        height: 17vw;
-        object-fit: cover;
-        &:hover {
-          animation-name: galerieHover;
-          animation-duration: 2s;
-          animation-timing-function: linear;
-          animation-fill-mode: forwards;
-        }
-      }
-    }
-    figcaption {
-      margin-top: 0.3rem;
-      font-size: 1.2rem;
-      font-style: italic;
-      text-align: center;
+  }
+  &__img-wrapper {
+    border: 0.3rem outset rgb(255, 158, 1);
+    overflow: hidden;
+    width: 28vw;
+    height: 17vw;
+    box-shadow: 0 0 5px rgb(122, 84, 7);
+  }
+  &__img {
+    width: 28vw;
+    height: 17vw;
+    object-fit: cover;
+    &:hover {
+      animation-name: imgHover;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
     }
   }
+  &__caption {
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+  }
 }
-@keyframes galerieHover {
+@keyframes imgHover {
   100% {
     transform: scale(1.5);
   }
 }
 @media only screen and (max-width: 1313px) {
-  main section.images-section {
-    figure {
-      div {
-        width: 40vw;
-        height: 27vw;
-        img {
-          width: 40vw;
-          height: 27vw;
-        }
-      }
+  .media {
+    &__img-wrapper {
+      width: 40vw;
+      height: 27vw;
+    }
+    &__img {
+      width: 40vw;
+      height: 27vw;
     }
   }
 }
 @media only screen and (max-width: 900px) {
-  main section.images-section {
-    figure {
-      div {
-        width: 80vw;
-        height: 54vw;
-        img {
-          width: 80vw;
-          height: 54vw;
-        }
-      }
+  .media {
+    &__img-wrapper {
+      width: 80vw;
+      height: 54vw;
+    }
+    &__img {
+      width: 80vw;
+      height: 54vw;
     }
   }
 }
 @media only screen and (max-width: 500px) {
-  main section.images-section {
-    figure {
-      div {
-        width: 90vw;
-        height: 65vw;
-        img {
-          width: 90vw;
-          height: 65vw;
-        }
-      }
+  .media {
+    &__img-wrapper {
+      width: 90vw;
+      height: 65vw;
+    }
+    &__img {
+      width: 90vw;
+      height: 65vw;
     }
   }
 }

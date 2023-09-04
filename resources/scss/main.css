@@ -566,73 +566,73 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
     font-size: 2rem;
   }
 }
-main section.images-section {
+.media {
   margin: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-main section.images-section figure {
+.media__item {
   margin: 1rem;
 }
-main section.images-section figure div {
+.media__img-wrapper {
   border: 0.3rem outset rgb(255, 158, 1);
   overflow: hidden;
   width: 28vw;
   height: 17vw;
   box-shadow: 0 0 5px rgb(122, 84, 7);
 }
-main section.images-section figure div img {
+.media__img {
   width: 28vw;
   height: 17vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main section.images-section figure div img:hover {
-  animation-name: galerieHover;
+.media__img:hover {
+  animation-name: imgHover;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
-main section.images-section figure figcaption {
+.media__caption {
   margin-top: 0.3rem;
   font-size: 1.2rem;
   font-style: italic;
   text-align: center;
 }
 
-@keyframes galerieHover {
+@keyframes imgHover {
   100% {
     transform: scale(1.5);
   }
 }
 @media only screen and (max-width: 1313px) {
-  main section.images-section figure div {
+  .media__img-wrapper {
     width: 40vw;
     height: 27vw;
   }
-  main section.images-section figure div img {
+  .media__img {
     width: 40vw;
     height: 27vw;
   }
 }
 @media only screen and (max-width: 900px) {
-  main section.images-section figure div {
+  .media__img-wrapper {
     width: 80vw;
     height: 54vw;
   }
-  main section.images-section figure div img {
+  .media__img {
     width: 80vw;
     height: 54vw;
   }
 }
 @media only screen and (max-width: 500px) {
-  main section.images-section figure div {
+  .media__img-wrapper {
     width: 90vw;
     height: 65vw;
   }
-  main section.images-section figure div img {
+  .media__img {
     width: 90vw;
     height: 65vw;
   }
