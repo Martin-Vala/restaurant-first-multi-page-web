@@ -1,74 +1,72 @@
-footer {
-  div.footer-info-block {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(255, 158, 1);
-    border-top: 0.125rem solid rgb(0, 0, 0);
-    border-bottom: 0.125rem solid rgb(0, 0, 0);
-    div {
-      text-align: center;
-      width: 0;
-      flex-grow: 1;
-      & + div {
-        border-left: 0.0625rem solid black;
-      }
-      h3 {
-        margin: 1.25rem;
-      }
-      p {
-        margin: 1.25rem 1.875rem;
-        line-height: 1.5;
-        span {
-          font-weight: bold;
-        }
-        a.kontakt-link {
-          &:hover {
-            color: rgb(21, 54, 78);
-          }
-        }
-      }
-      a.icon-link {
-        display: block;
-        text-decoration: none;
-        width: 3.125rem;
-        margin: 1.25rem auto;
-        i {
-          font-size: 3.125rem;
-          transition: color 300ms linear;
-          &:hover {
-            animation: iconAnimation;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-          }
-        }
-        i.fa-facebook:hover {
-          color: rgb(66, 103, 178);
-        }
-        i.fa-instagram:hover {
-          color: rgb(131, 58, 180);
-        }
-      }
+// FOOTER FIRST BLOCK
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 158, 1);
+  border-top: 0.125rem solid rgb(0, 0, 0);
+  border-bottom: 0.125rem solid rgb(0, 0, 0);
+  &__item {
+    text-align: center;
+    width: 0;
+    flex-grow: 1;
+  }
+  &__item + &__item {
+    border-left: 0.0625rem solid black;
+  }
+  &__heading {
+    margin: 1.25rem;
+  }
+  &__text {
+    margin: 1.25rem 1.875rem;
+    line-height: 1.5;
+  }
+  &__link {
+    &:hover {
+      color: rgb(21, 54, 78);
     }
   }
-  div.footer-copyright-block {
-    padding: 1rem 0;
-    background-color: rgb(255, 89, 0);
-    p {
-      font-size: 1rem;
-      text-align: center;
-      margin-bottom: 1rem;
-      a {
-        font-weight: bold;
-        &:hover {
-          color: rgb(21, 54, 78);
-          animation-name: linkAnimation;
-          animation-duration: 2s;
-          animation-iteration-count: infinite;
-        }
-      }
+  &__link--icon {
+    display: block;
+    text-decoration: none;
+    width: 3.125rem;
+    margin: 1.25rem auto;
+  }
+  &__icon {
+    font-size: 3.125rem;
+    transition: color 300ms linear;
+    &:hover {
+      animation: iconAnimation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+  &__icon--fb:hover {
+    color: rgb(66, 103, 178);
+  }
+  &__icon--ig:hover {
+    color: rgb(131, 58, 180);
+  }
+}
+// FOOTER SECOND BLOCK
+.footer-copyright {
+  padding: 1rem 0;
+  background-color: rgb(255, 89, 0);
+  &__text {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    font-weight: bold;
+    &:hover {
+      color: rgb(21, 54, 78);
+      animation-name: linkAnimation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
   }
 }
+// FOOTER ANIMATIONS - KEYFRAMES
 @keyframes iconAnimation {
   100% {
     transform: rotate(360deg);
@@ -79,11 +77,12 @@ footer {
     color: rgb(23, 99, 205);
   }
 }
+// FOOTER MEDIA QUERIES
 @media only screen and (max-width: 722px) {
-  footer div.footer-info-block div {
+  .footer-info__item {
     flex-basis: 100%;
     min-height: 205px;
-    & + div {
+    & + & {
       border-top: 1px solid black;
       border-left-width: 0rem;
     }

@@ -183,6 +183,10 @@ p {
   font-size: 1.5rem;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 main section.margin-separation {
   margin: 3rem;
 }
@@ -228,16 +232,16 @@ header nav a.navbar-brand {
   font-size: 2rem;
   font-weight: bold;
 }
-header nav a.navbar-brand img {
+header nav a.navbar-brand .nav__logo {
   margin: 0 0.625rem;
   width: 3.75rem;
   height: 3.75rem;
 }
-header nav ul {
+header nav ul.navbar-nav {
   margin-left: auto;
   margin-right: 0.625rem;
 }
-header nav ul li {
+header nav ul.navbar-nav li.nav-item {
   font-size: 1.5rem;
   margin: 0 0.625rem;
   padding: 0.3125rem;
@@ -246,7 +250,7 @@ header nav ul li {
 }
 
 /* MAIN BANNER SECTION */
-main section.banner {
+.banner {
   background-image: url("./../../resources/image/banner-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -256,7 +260,7 @@ main section.banner {
   display: flex;
   align-items: center;
 }
-main section.banner h1 {
+.banner__heading {
   color: white;
   background-color: black;
   width: 100%;
@@ -266,68 +270,66 @@ main section.banner h1 {
   padding: 1rem;
 }
 
-footer div.footer-info-block {
+.footer-info {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(255, 158, 1);
   border-top: 0.125rem solid rgb(0, 0, 0);
   border-bottom: 0.125rem solid rgb(0, 0, 0);
 }
-footer div.footer-info-block div {
+.footer-info__item {
   text-align: center;
   width: 0;
   flex-grow: 1;
 }
-footer div.footer-info-block div + div {
+.footer-info__item + .footer-info__item {
   border-left: 0.0625rem solid black;
 }
-footer div.footer-info-block div h3 {
+.footer-info__heading {
   margin: 1.25rem;
 }
-footer div.footer-info-block div p {
+.footer-info__text {
   margin: 1.25rem 1.875rem;
   line-height: 1.5;
 }
-footer div.footer-info-block div p span {
-  font-weight: bold;
-}
-footer div.footer-info-block div p a.kontakt-link:hover {
+.footer-info__link:hover {
   color: rgb(21, 54, 78);
 }
-footer div.footer-info-block div a.icon-link {
+.footer-info__link--icon {
   display: block;
   text-decoration: none;
   width: 3.125rem;
   margin: 1.25rem auto;
 }
-footer div.footer-info-block div a.icon-link i {
+.footer-info__icon {
   font-size: 3.125rem;
   transition: color 300ms linear;
 }
-footer div.footer-info-block div a.icon-link i:hover {
+.footer-info__icon:hover {
   animation: iconAnimation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-footer div.footer-info-block div a.icon-link i.fa-facebook:hover {
+.footer-info__icon--fb:hover {
   color: rgb(66, 103, 178);
 }
-footer div.footer-info-block div a.icon-link i.fa-instagram:hover {
+.footer-info__icon--ig:hover {
   color: rgb(131, 58, 180);
 }
-footer div.footer-copyright-block {
+
+.footer-copyright {
   padding: 1rem 0;
   background-color: rgb(255, 89, 0);
 }
-footer div.footer-copyright-block p {
+.footer-copyright__text {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1rem;
 }
-footer div.footer-copyright-block p a {
+.footer-copyright__link {
   font-weight: bold;
 }
-footer div.footer-copyright-block p a:hover {
+.footer-copyright__link:hover {
   color: rgb(21, 54, 78);
   animation-name: linkAnimation;
   animation-duration: 2s;
@@ -345,11 +347,11 @@ footer div.footer-copyright-block p a:hover {
   }
 }
 @media only screen and (max-width: 722px) {
-  footer div.footer-info-block div {
+  .footer-info__item {
     flex-basis: 100%;
     min-height: 205px;
   }
-  footer div.footer-info-block div + div {
+  .footer-info__item + .footer-info__item {
     border-top: 1px solid black;
     border-left-width: 0rem;
   }

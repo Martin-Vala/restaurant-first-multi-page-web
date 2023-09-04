@@ -10,16 +10,16 @@ header {
       align-items: center;
       font-size: 2rem;
       font-weight: bold;
-      img {
+      .nav__logo {
         margin: 0 0.625rem;
         width: 3.75rem;
         height: 3.75rem;
       }
     }
-    ul {
+    ul.navbar-nav {
       margin-left: auto;
       margin-right: 0.625rem;
-      li {
+      li.nav-item {
         font-size: 1.5rem;
         margin: 0 0.625rem;
         padding: 0.3125rem;

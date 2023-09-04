@@ -36,7 +36,7 @@
       <!-- HEADER -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-          <img src="./resources/image/takeout-box.svg" class="d-inline-block align-top" alt="" />
+          <img src="./resources/image/takeout-box.svg" class="nav__logo" alt="restaurant logo" />
           KYONO
         </a>
         <button
@@ -76,18 +76,22 @@
     </header>
     <!-- MAIN -->
     <main>
-      <!-- BANNER SECTION -->
+      <!-- BANNER -->
       <section class="banner">
-        <h1>GALERIE</h1>
+        <h1 class="banner__heading">GALERIE</h1>
       </section>
       <!-- IMAGES SECTION -->
-      <section class="images-section">
-        <figure>
+      <section class="media">
+        <figure class="media__item">
           <!-- IMAGE 1 -->
-          <div>
-            <img src="./resources/image/galerie-images/1. Pohled z ulice.jpg" alt="pohled z ulice" />
+          <div class="media__img-container">
+            <img
+              class="media__img"
+              src="./resources/image/galerie-images/1. Pohled z ulice.jpg"
+              alt="pohled z ulice"
+            />
           </div>
-          <figcaption>Pohled z ulice</figcaption>
+          <figcaption class="media__text">Pohled z ulice</figcaption>
         </figure>
         <figure>
           <!-- IMAGE 2 -->
@@ -143,51 +147,61 @@
     </main>
     <!-- FOOTER -->
     <footer>
-      <!-- INFO BLOCKS -->
-      <div class="footer-info-block">
-        <!-- BLOCK 1 -->
-        <div>
-          <h3>INFORMACE</h3>
-          <p>
+      <!-- INFO BLOCK -->
+      <div class="footer-info">
+        <!-- ITEM 1 -->
+        <div class="footer-info__item">
+          <h3 class="footer-info__heading">INFORMACE</h3>
+          <p class="footer-info__text">
             Na přaní Vám vše rádi zabalíme s sebou. Přijímáme stravenky
-            <span>Ticket Restaurant, Cheque Dejeuner a Sodexo Gastro Pass.</span>
+            <span class="text-bold">Ticket Restaurant, Cheque Dejeuner a Sodexo Gastro Pass.</span>
           </p>
         </div>
-        <!-- BLOCK 2 -->
-        <div>
-          <h3>KONTAKT</h3>
-          <p>
-            <a class="kontakt-link" href="https://goo.gl/maps/SYgJbnDNFWR8f72c9">
+        <!-- ITEM 2 -->
+        <div class="footer-info__item">
+          <h3 class="footer-info__heading">KONTAKT</h3>
+          <p class="footer-info__text">
+            <a class="footer-info__link" href="https://goo.gl/maps/SYgJbnDNFWR8f72c9" target="_blank">
               Mladoboleslavská 157, 190 17 Praha 9 Vinoř
             </a>
             <br />
-            <a class="kontakt-link" href="tel:+420607509850">+420 607 509 850</a>
+            <a class="footer-info__link" href="tel:+420607509850">+420 607 509 850</a>
             <br />
             Pondělí: Zavřeno
             <br />
             Út - Ne: 11:00 - 23:00
             <br />
-            <a class="kontakt-link" href="mailto:info@xianglong.cz">info@xianglong.cz</a>
+            <a class="footer-info__link" href="mailto:info@xianglong.cz">info@xianglong.cz</a>
           </p>
         </div>
-        <!-- BLOCK 3 -->
-        <div>
-          <h3>SLEDUJTE NÁS</h3>
-          <p>Připojte se k nám na FB nebo IG</p>
-          <a class="icon-link" href="https://www.facebook.com/" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
+        <!-- ITEM 3 -->
+        <div class="footer-info__item">
+          <h3 class="footer-info__heading">SLEDUJTE NÁS</h3>
+          <p class="footer-info__text">Připojte se k nám na FB nebo IG</p>
+          <a
+            class="footer-info__link footer-info__link--icon"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <i class="footer-info__icon footer-info__icon--fb fa-brands fa-facebook"></i>
           </a>
-          <a class="icon-link" href="https://www.instagram.com/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
+          <a
+            class="footer-info__link footer-info__link--icon"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <i class="footer-info__icon footer-info__icon--ig fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
-      <!-- COPYRIGHT -->
-      <div class="footer-copyright-block">
-        <p>Copyright © 2019 Restaurace KYONO | Všechna práva vyhrazena</p>
-        <p>
+      <!-- COPYRIGHT BLOCK -->
+      <div class="footer-copyright">
+        <p class="footer-copyright__text">Copyright © 2019 Restaurace KYONO | Všechna práva vyhrazena</p>
+        <p class="footer-copyright__text">
           Vytvořil:
-          <a target="_blank" href="https://www.linkedin.com/in/martin-vala/">Martin Vala</a>
+          <a class="footer-copyright__link" target="_blank" href="https://www.linkedin.com/in/martin-vala/">
+            Martin Vala
+          </a>
         </p>
       </div>
     </footer>

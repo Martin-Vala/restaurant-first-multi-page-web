@@ -1,5 +1,5 @@
 /* MAIN BANNER SECTION */
-main section.banner {
+.banner {
   background-image: url("./../../resources/image/banner-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@ main section.banner {
   width: 100%;
   display: flex;
   align-items: center;
-  h1 {
+  &__heading {
     color: white;
     background-color: black;
     width: 100%;
