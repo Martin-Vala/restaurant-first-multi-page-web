@@ -191,24 +191,14 @@ p {
   margin: 3rem;
 }
 
-h2.first-h2 {
-  text-align: center;
-  padding: 1rem;
-  background-color: rgb(255, 158, 1);
-  line-height: 1.3;
-  border-top: 0.0625rem solid black;
-  border-bottom: 0.0625rem solid black;
-}
-
-p.second-p {
+.section-header__supertext {
   text-align: center;
   margin-bottom: 0.5rem;
   color: rgba(255, 89, 0, 0.8);
   font-style: italic;
   font-size: 1.3rem;
 }
-
-h2.second-h2 {
+.section-header__title {
   background-color: transparent;
   border-top: 0.125rem solid black;
   border-bottom: 0.125rem solid black;
@@ -490,6 +480,14 @@ main section.menu-block div.heading-menu div {
   justify-content: center;
   background-color: rgb(255, 158, 1);
 }
+main section.menu-block div.heading-menu div .first-h2 {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(255, 158, 1);
+  line-height: 1.3;
+  border-top: 0.0625rem solid black;
+  border-bottom: 0.0625rem solid black;
+}
 main section.menu-block div.heading-menu-tydenni {
   background-image: url(./../../resources/image/menu-page/tydenni-menu-banner.jpg);
   background-position: bottom;
@@ -711,10 +709,10 @@ main section.menu-block div.text-menu div.text-menu-meal p.text-menu-meal-info {
   color: rgb(154, 105, 0);
 }
 
-main section.map-section h2 {
+.map__title {
   margin-bottom: 2rem;
 }
-main section.map-section iframe {
+.map__iframe {
   width: 100% !important;
   height: 80vh !important;
   transform: translateY(2px);

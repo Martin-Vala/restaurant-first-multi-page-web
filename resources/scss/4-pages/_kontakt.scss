@@ -51,11 +51,11 @@
     }
   }
 }
-main section.map-section {
-  h2 {
+.map {
+  &__title {
     margin-bottom: 2rem;
   }
-  iframe {
+  &__iframe {
     width: 100% !important;
     height: 80vh !important;
     transform: translateY(2px);
