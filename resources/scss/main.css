@@ -187,7 +187,7 @@ p {
   font-weight: bold;
 }
 
-main section.margin-separation {
+.margin-separation {
   margin: 3rem;
 }
 
@@ -356,101 +356,121 @@ header nav ul.navbar-nav li.nav-item {
     border-left-width: 0rem;
   }
 }
-main section.form-section form {
+.form {
   margin: 1rem 10vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main section.form-section form div {
+.form__item {
   margin: 1rem 3rem;
 }
-main section.form-section form div label {
+.form__label {
   display: block;
   padding-bottom: 0.5rem;
 }
-main section.form-section form div input,
-main section.form-section form div select,
-main section.form-section form div textarea {
+.form__input {
   width: 18.75rem;
   padding: 1rem;
   border-radius: 1rem;
   border: 0.125rem solid rgba(55, 52, 52, 0.5);
   font-size: 1.3rem;
 }
-main section.form-section form div textarea#message {
+.form__input--textarea {
   width: 68rem;
 }
-main section.form-section form div .form-button {
+.form__input--button {
   width: 12.5rem;
   box-sizing: border-box;
   font-weight: bold;
   transition: background-color 100ms linear, color 100ms linear;
 }
-main section.form-section form div .form-button:hover {
+.form__input--button:hover {
   border: 0.125rem solid black;
   cursor: pointer;
   color: white;
 }
-main section.form-section form div .submit-button:hover {
+.form__input--reset-button:hover {
   background-color: darkgreen;
 }
-main section.form-section form div .reset-button:hover {
+.form__input--submit-button:hover {
   background-color: darkred;
 }
 
-/* MEDIA QUERIES - ALL FORMS */
+/* FORM - MEDIA QUERIES */
 @media only screen and (max-width: 1630px) {
-  main section.form-section form {
+  .form {
     margin: 1rem 7vw;
   }
 }
 @media only screen and (max-width: 1540px) {
-  main section.form-section form {
+  .form {
     margin: 1rem 12vw;
   }
 }
 @media only screen and (max-width: 1290px) {
-  main section.form-section form {
+  .form {
     margin: 1rem 10vw;
   }
 }
 @media only screen and (max-width: 1225px) {
-  main section.form-section form {
+  .form {
     margin: 1rem 7vw;
   }
 }
 @media only screen and (max-width: 1140px) {
-  main section.form-section {
-    margin: 3rem 0;
+  .form-section {
+    margin: 3rem 3rem;
   }
-  main section.form-section form {
+  .form-section .form {
     margin: 1rem;
   }
 }
 @media only screen and (max-width: 932px) {
-  main section.form-section form {
+  .form {
     margin: 1rem 7vw;
   }
 }
 @media only screen and (max-width: 711px) {
-  main section.form-section form {
+  .form {
     margin: 1rem 2rem;
   }
-  main section.form-section form div input,
-  main section.form-section form div select,
-  main section.form-section form div textarea#message {
+  .form__input {
     width: 70vw;
+  }
+  .form__input--button {
+    width: 35vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .form__input--button {
+    width: 12.5rem;
+  }
+}
+/* RESERVATION FORM - MEDIA QUERIES */
+@media only screen and (max-width: 1004px) and (min-width: 929px) {
+  .form-section--reservation {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form-section--reservation .form--reservation {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /* KONTAKT FORM - MEDIA QUERIES */
 @media only screen and (max-width: 1003px) and (min-width: 712px) {
-  main section.form-section form.kontakt-form div.input-data-block {
+  .form--kontakt .form__item {
     margin: 1rem 7rem;
   }
-  main section.form-section form.kontakt-form div.input-data-block input,
-  main section.form-section form.kontakt-form div.input-data-block textarea#message {
+  .form--kontakt .form__item--button {
+    margin: 1rem 3rem;
+  }
+  .form--kontakt .form__input {
     width: 43.25rem;
+  }
+  .form--kontakt .form__input--button {
+    width: 12.5rem;
   }
 }
 main section.menu-block {

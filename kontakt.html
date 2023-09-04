@@ -80,7 +80,7 @@
         <h1 class="banner__heading">KONTAKT</h1>
       </section>
       <!-- KONTAKT BOXES SECTION -->
-      <section class="kontakt-boxes-section margin-separation">
+      <section class="kontakt-boxes margin-separation">
         <p class="second-p">- Navštivte nás -</p>
         <h2 class="second-h2">KDE SÍDLÍME</h2>
         <div class="kontakt-boxes">
@@ -134,26 +134,41 @@
         <p class="second-p">- Pošlete nám zprávu -</p>
         <h2 class="second-h2">KONTAKTNÍ FORMULÁŘ</h2>
         <!-- FORM -->
-        <form action="#" method="post" class="kontakt-form">
+        <form action="#" method="post" class="form form--kontakt">
           <!-- NAME INPUT -->
-          <div class="input-data-block">
-            <label for="fname">Jméno*</label>
-            <input type="text" id="fname" name="fname" placeholder="Honza" required />
+          <div class="form__item">
+            <label class="form__label" for="fname">Jméno*</label>
+            <input class="form__input" type="text" id="fname" name="fname" placeholder="Honza" required />
           </div>
           <!-- EMAIL INPUT -->
-          <div class="input-data-block">
-            <label for="email">Email*</label>
-            <input type="email" id="email" name="email" placeholder="honza.novotny@email.cz" required />
+          <div class="form__item">
+            <label class="form__label" for="email">Email*</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="honza.novotny@email.cz"
+              required
+            />
           </div>
           <!-- TEL INPUT -->
-          <div class="input-data-block">
-            <label for="phone">Telefon</label>
-            <input type="tel" id="phone" name="phone" placeholder="763254342" pattern="[0-9]{9,12}" />
+          <div class="form__item">
+            <label class="form__label" for="phone">Telefon</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="763254342"
+              pattern="[0-9]{9,12}"
+            />
           </div>
           <!-- TEXTAREA INPUT -->
-          <div class="input-data-block">
-            <label for="message">Zpráva*</label>
+          <div class="form__item">
+            <label class="form__label" for="message">Zpráva*</label>
             <textarea
+              class="form__input form__input--textarea"
               id="message"
               name="message"
               rows="6"
@@ -162,12 +177,20 @@
             ></textarea>
           </div>
           <!-- RESET INPUT -->
-          <div>
-            <input class="form-button reset-button" type="reset" value="Obnovit" />
+          <div class="form__item form__item--button">
+            <input
+              class="form__input form__input--button form__input--reset-button"
+              type="reset"
+              value="Obnovit"
+            />
           </div>
           <!-- SUBMIT INPUT -->
-          <div>
-            <input class="form-button submit-button" type="submit" value="Odeslat zprávu" />
+          <div class="form__item form__item--button">
+            <input
+              class="form__input form__input--button form__input--submit-button"
+              type="submit"
+              value="Odeslat zprávu"
+            />
           </div>
         </form>
       </section>
