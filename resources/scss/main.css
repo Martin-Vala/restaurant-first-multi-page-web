@@ -154,7 +154,7 @@ html {
   }
 }
 body {
-  background-color: bisque;
+  background-color: rgb(255, 228, 196);
   font-family: "Inter", sans-serif;
   margin: 0 auto;
   color: black;
@@ -293,7 +293,7 @@ header nav ul.navbar-nav li.nav-item {
 }
 .footer-info__icon {
   font-size: 3.125rem;
-  transition: color 300ms linear;
+  transition: color 300ms ease-in-out;
 }
 .footer-info__icon:hover {
   animation: iconAnimation;
@@ -381,10 +381,10 @@ header nav ul.navbar-nav li.nav-item {
   color: white;
 }
 .form__input--reset-button:hover {
-  background-color: darkgreen;
+  background-color: darkred;
 }
 .form__input--submit-button:hover {
-  background-color: darkred;
+  background-color: darkgreen;
 }
 
 /* FORM - MEDIA QUERIES */
@@ -602,8 +602,8 @@ header nav ul.navbar-nav li.nav-item {
   box-shadow: 0 0 5px rgb(122, 84, 7);
 }
 .media__img {
-  width: 28vw;
-  height: 17vw;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -630,27 +630,15 @@ header nav ul.navbar-nav li.nav-item {
     width: 40vw;
     height: 27vw;
   }
-  .media__img {
-    width: 40vw;
-    height: 27vw;
-  }
 }
 @media only screen and (max-width: 900px) {
   .media__img-wrapper {
     width: 80vw;
     height: 54vw;
   }
-  .media__img {
-    width: 80vw;
-    height: 54vw;
-  }
 }
 @media only screen and (max-width: 500px) {
   .media__img-wrapper {
-    width: 90vw;
-    height: 65vw;
-  }
-  .media__img {
     width: 90vw;
     height: 65vw;
   }
