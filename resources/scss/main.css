@@ -241,7 +241,7 @@ header nav ul.navbar-nav li.nav-item {
 
 /* MAIN BANNER SECTION */
 .banner {
-  background-image: url("./../../resources/image/banner-img.jpg");
+  background-image: url("./../../resources/images/banner-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -474,13 +474,13 @@ header nav ul.navbar-nav li.nav-item {
   justify-content: center;
 }
 .menu__title-first-wrapper--tydenni {
-  background-image: url(./../../resources/image/menu-page/tydenni-menu-banner.jpg);
+  background-image: url(./../../resources/images/menu-images/tydenni-menu-banner.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .menu__title-first-wrapper--poledni {
-  background-image: url(./../../resources/image/menu-page/poledni-menu-banner.jpg);
+  background-image: url(./../../resources/images/menu-images/poledni-menu-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
