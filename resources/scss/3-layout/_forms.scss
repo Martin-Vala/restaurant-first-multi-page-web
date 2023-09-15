@@ -24,7 +24,7 @@
     width: 12.5rem;
     box-sizing: border-box;
     font-weight: bold;
-    transition: background-color 100ms linear, color 100ms linear;
+    transition: background-color 150ms ease, color 150ms ease;
     &:hover {
       border: 0.125rem solid black;
       cursor: pointer;

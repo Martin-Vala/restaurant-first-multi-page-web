@@ -373,7 +373,7 @@ header nav ul.navbar-nav li.nav-item {
   width: 12.5rem;
   box-sizing: border-box;
   font-weight: bold;
-  transition: background-color 100ms linear, color 100ms linear;
+  transition: background-color 150ms ease, color 150ms ease;
 }
 .form__input--button:hover {
   border: 0.125rem solid black;
@@ -528,7 +528,7 @@ header nav ul.navbar-nav li.nav-item {
   -o-object-position: -0.75rem 0;
      object-position: -0.75rem 0;
   margin-right: 0.5rem;
-  transition: transform 300ms linear, border-radius 300ms linear;
+  transition: transform 500ms ease-in-out, border-radius 500ms ease-in-out;
 }
 .menu__img:hover {
   transform: scale(5);
@@ -610,7 +610,7 @@ header nav ul.navbar-nav li.nav-item {
 .media__img:hover {
   animation-name: imgHover;
   animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 .media__caption {

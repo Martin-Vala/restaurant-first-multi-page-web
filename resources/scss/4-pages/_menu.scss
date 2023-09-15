@@ -60,7 +60,7 @@
     object-fit: cover;
     object-position: -0.75rem 0;
     margin-right: 0.5rem;
-    transition: transform 300ms linear, border-radius 300ms linear;
+    transition: transform 500ms ease-in-out, border-radius 500ms ease-in-out;
     &:hover {
       transform: scale(5);
       border-radius: 0;
