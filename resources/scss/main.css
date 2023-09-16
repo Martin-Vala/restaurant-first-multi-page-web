@@ -209,29 +209,29 @@ p {
   padding: 0.8rem;
 }
 
-header {
+.header {
   background: linear-gradient(rgb(255, 158, 1), rgb(255, 89, 0));
   position: fixed;
   z-index: 100;
   width: 100%;
   box-shadow: 0 0.0625rem 0.3125rem black;
 }
-header nav a.navbar-brand {
+.header__title {
   display: flex;
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
 }
-header nav a.navbar-brand .nav__logo {
+.header__logo {
   margin: 0 0.625rem;
   width: 3.75rem;
   height: 3.75rem;
 }
-header nav ul.navbar-nav {
+.header__list {
   margin-left: auto;
   margin-right: 0.625rem;
 }
-header nav ul.navbar-nav li.nav-item {
+.header__item {
   font-size: 1.5rem;
   margin: 0 0.625rem;
   padding: 0.3125rem;

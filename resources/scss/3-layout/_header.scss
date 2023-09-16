@@ -1,35 +1,30 @@
-header {
+.header {
   background: linear-gradient(rgb(255, 158, 1), rgb(255, 89, 0));
   position: fixed;
   z-index: 100;
   width: 100%;
   box-shadow: 0 0.0625rem 0.3125rem black;
 
-  nav {
-    a.navbar-brand {
-      display: flex;
-      align-items: center;
-      font-size: 2rem;
-      font-weight: bold;
-
-      .nav__logo {
-        margin: 0 0.625rem;
-        width: 3.75rem;
-        height: 3.75rem;
-      }
-    }
-
-    ul.navbar-nav {
-      margin-left: auto;
-      margin-right: 0.625rem;
-
-      li.nav-item {
-        font-size: 1.5rem;
-        margin: 0 0.625rem;
-        padding: 0.3125rem;
-        border-radius: 0.625rem;
-        text-align: center;
-      }
-    }
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &__logo {
+    margin: 0 0.625rem;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  &__list {
+    margin-left: auto;
+    margin-right: 0.625rem;
+  }
+  &__item {
+    font-size: 1.5rem;
+    margin: 0 0.625rem;
+    padding: 0.3125rem;
+    border-radius: 0.625rem;
+    text-align: center;
   }
 }
