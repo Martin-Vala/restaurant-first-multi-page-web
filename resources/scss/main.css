@@ -250,7 +250,7 @@ header nav ul.navbar-nav li.nav-item {
   display: flex;
   align-items: center;
 }
-.banner__heading {
+.banner__title {
   color: white;
   background-color: black;
   width: 100%;
@@ -260,66 +260,65 @@ header nav ul.navbar-nav li.nav-item {
   padding: 1rem;
 }
 
-.footer-info {
+.footer__info {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(255, 158, 1);
   border-top: 0.125rem solid rgb(0, 0, 0);
   border-bottom: 0.125rem solid rgb(0, 0, 0);
 }
-.footer-info__item {
+.footer__info-item {
   text-align: center;
   width: 0;
   flex-grow: 1;
 }
-.footer-info__item + .footer-info__item {
+.footer__info-item + .footer__info-item {
   border-left: 0.0625rem solid black;
 }
-.footer-info__heading {
+.footer__info-heading {
   margin: 1.25rem;
 }
-.footer-info__text {
+.footer__info-text {
   margin: 1.25rem 1.875rem;
   line-height: 1.5;
 }
-.footer-info__link:hover {
+.footer__info-link:hover {
   color: rgb(21, 54, 78);
 }
-.footer-info__link--icon {
+.footer__info-link--icon {
   display: block;
   text-decoration: none;
   width: 3.125rem;
   margin: 1.25rem auto;
 }
-.footer-info__icon {
+.footer__info-icon {
   font-size: 3.125rem;
   transition: color 300ms ease-in-out;
 }
-.footer-info__icon:hover {
+.footer__info-icon:hover {
   animation: iconAnimation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.footer-info__icon--fb:hover {
+.footer__info-icon--fb:hover {
   color: rgb(66, 103, 178);
 }
-.footer-info__icon--ig:hover {
+.footer__info-icon--ig:hover {
   color: rgb(131, 58, 180);
 }
-
-.footer-copyright {
+.footer__copyright {
   padding: 1rem 0;
   background-color: rgb(255, 89, 0);
 }
-.footer-copyright__text {
+.footer__copyright-text {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1rem;
 }
-.footer-copyright__link {
+.footer__copyright-link {
   font-weight: bold;
 }
-.footer-copyright__link:hover {
+.footer__copyright-link:hover {
   color: rgb(21, 54, 78);
   animation-name: linkAnimation;
   animation-duration: 2s;
@@ -337,11 +336,11 @@ header nav ul.navbar-nav li.nav-item {
   }
 }
 @media only screen and (max-width: 722px) {
-  .footer-info__item {
+  .footer__info-item {
     flex-basis: 100%;
     min-height: 205px;
   }
-  .footer-info__item + .footer-info__item {
+  .footer__info-item + .footer__info-item {
     border-top: 1px solid black;
     border-left-width: 0rem;
   }
