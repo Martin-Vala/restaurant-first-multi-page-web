@@ -411,7 +411,7 @@ p {
   .form-section {
     margin: 3rem 3rem;
   }
-  .form-section .form {
+  .form {
     margin: 1rem;
   }
 }
@@ -447,18 +447,18 @@ p {
     margin-right: 0;
   }
 }
-/* KONTAKT FORM - MEDIA QUERIES */
+/* CONTACT FORM - MEDIA QUERIES */
 @media only screen and (max-width: 1003px) and (min-width: 712px) {
-  .form--kontakt .form__item {
+  .form--contact .form__item {
     margin: 1rem 7rem;
   }
-  .form--kontakt .form__item--button {
+  .form--contact .form__item--button {
     margin: 1rem 3rem;
   }
-  .form--kontakt .form__input {
+  .form--contact .form__input--textarea {
     width: 43.25rem;
   }
-  .form--kontakt .form__input--button {
+  .form--contact .form__input--button {
     width: 12.5rem;
   }
 }

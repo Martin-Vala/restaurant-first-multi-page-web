@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   &__item {
     margin: 1rem 3rem;
   }
@@ -62,9 +63,9 @@
 @media only screen and (max-width: 1140px) {
   .form-section {
     margin: 3rem 3rem;
-    .form {
-      margin: 1rem;
-    }
+  }
+  .form {
+    margin: 1rem;
   }
 }
 @media only screen and (max-width: 932px) {
@@ -101,16 +102,16 @@
     }
   }
 }
-/* KONTAKT FORM - MEDIA QUERIES */
+/* CONTACT FORM - MEDIA QUERIES */
 @media only screen and (max-width: 1003px) and (min-width: 712px) {
-  .form--kontakt {
+  .form--contact {
     .form__item {
       margin: 1rem 7rem;
     }
     .form__item--button {
       margin: 1rem 3rem;
     }
-    .form__input {
+    .form__input--textarea {
       width: 43.25rem;
     }
     .form__input--button {
