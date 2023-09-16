@@ -170,6 +170,7 @@
               id="email"
               name="email"
               placeholder="honza.novotny@email.cz"
+              pattern=".*\..*"
               required
             />
           </div>
@@ -182,7 +183,7 @@
               id="phone"
               name="phone"
               placeholder="763254342"
-              pattern="[0-9]{9,12}"
+              pattern="\+?[0-9]{9,12}"
             />
           </div>
           <!-- TEXTAREA INPUT -->
@@ -195,6 +196,7 @@
               rows="6"
               cols="30"
               placeholder="Zde zadejte svou zprávu"
+              required
             ></textarea>
           </div>
           <!-- RESET INPUT -->
