@@ -27,4 +27,7 @@
     border-radius: 0.625rem;
     text-align: center;
   }
+  &__button:focus {
+    outline: 2px solid;
+  }
 }
