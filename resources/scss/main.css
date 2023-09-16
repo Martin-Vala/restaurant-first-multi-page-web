@@ -462,7 +462,7 @@ p {
     width: 12.5rem;
   }
 }
-.contact-boxes {
+.contact-boxes__list {
   margin: 2rem 0;
   display: flex;
   justify-content: center;
