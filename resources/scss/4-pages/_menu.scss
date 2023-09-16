@@ -7,13 +7,13 @@
     display: flex;
     justify-content: center;
   }
-  &__title-first-wrapper--tydenni {
+  &__title-first-wrapper--weekly {
     background-image: url(./../../resources/images/menu-images/tydenni-menu-banner.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  &__title-first-wrapper--poledni {
+  &__title-first-wrapper--noon {
     background-image: url(./../../resources/images/menu-images/poledni-menu-banner.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
   &__text-wrapper {
     width: 100%;
   }
-  &__palive {
+  &__spicy {
     vertical-align: super;
     background-color: goldenrod;
     color: white;
@@ -77,7 +77,7 @@
     padding: 0.0625rem 0.375rem 0.0625rem 0.1875rem;
     font-style: italic;
   }
-  &__cena {
+  &__price {
     color: goldenrod;
     flex-shrink: 0;
   }
@@ -102,7 +102,7 @@
   }
 }
 @media only screen and (max-width: 590px) {
-  .menu__palive {
+  .menu__spicy {
     vertical-align: baseline;
   }
 }
