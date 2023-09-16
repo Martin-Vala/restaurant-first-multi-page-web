@@ -349,29 +349,41 @@ p {
   }
 }
 .form {
-  margin: 1rem 10vw;
+  margin: 1rem 3rem;
+}
+.form__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .form__item {
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
+  width: 25%;
+}
+.form__item--textarea {
+  width: 75%;
+  margin: 1rem 6rem;
+}
+.form__item--button {
+  display: flex;
+  justify-content: center;
 }
 .form__label {
   display: block;
   padding-bottom: 0.5rem;
 }
 .form__input {
-  width: 18.75rem;
+  width: 100%;
   padding: 1rem;
   border-radius: 1rem;
   border: 0.125rem solid rgba(55, 52, 52, 0.5);
   font-size: 1.3rem;
 }
 .form__input--textarea {
-  width: 68rem;
+  width: 100%;
 }
 .form__input--button {
+  flex-shrink: 0;
   width: 12.5rem;
   box-sizing: border-box;
   font-weight: bold;
@@ -389,80 +401,27 @@ p {
   background-color: darkgreen;
 }
 
-/* FORM - MEDIA QUERIES */
-@media only screen and (max-width: 1630px) {
+/* FORM MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  .form__item {
+    width: 40%;
+  }
+  .form__item--textarea {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
   .form {
-    margin: 1rem 7vw;
+    margin: 1rem 0;
+  }
+  .form__item {
+    width: 80%;
   }
 }
-@media only screen and (max-width: 1540px) {
-  .form {
-    margin: 1rem 12vw;
-  }
-}
-@media only screen and (max-width: 1290px) {
-  .form {
-    margin: 1rem 10vw;
-  }
-}
-@media only screen and (max-width: 1225px) {
-  .form {
-    margin: 1rem 7vw;
-  }
-}
-@media only screen and (max-width: 1140px) {
-  .form-section {
-    margin: 3rem 3rem;
-  }
-  .form {
-    margin: 1rem;
-  }
-}
-@media only screen and (max-width: 932px) {
-  .form {
-    margin: 1rem 7vw;
-  }
-}
-@media only screen and (max-width: 711px) {
-  .form {
-    margin: 1rem 2rem;
-  }
-  .form__input {
-    width: 70vw;
-  }
-  .form__input--button {
-    width: 35vw;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .form__input--button {
-    width: 12.5rem;
-  }
-}
-/* RESERVATION FORM - MEDIA QUERIES */
-@media only screen and (max-width: 1004px) and (min-width: 929px) {
-  .form-section--reservation {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .form-section--reservation .form--reservation {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-/* CONTACT FORM - MEDIA QUERIES */
-@media only screen and (max-width: 1003px) and (min-width: 712px) {
-  .form--contact .form__item {
-    margin: 1rem 7rem;
-  }
-  .form--contact .form__item--button {
-    margin: 1rem 3rem;
-  }
-  .form--contact .form__input--textarea {
-    width: 43.25rem;
-  }
-  .form--contact .form__input--button {
-    width: 12.5rem;
+@media only screen and (max-width: 600px) {
+  .form__item {
+    margin: 1rem 0;
+    width: 100%;
   }
 }
 .contact-boxes__list {

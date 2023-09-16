@@ -156,65 +156,69 @@
         </div>
         <!-- FORM -->
         <form action="#" method="post" class="form form--contact">
-          <!-- NAME INPUT -->
-          <div class="form__item">
-            <label class="form__label" for="fname">Jméno*</label>
-            <input class="form__input" type="text" id="fname" name="fname" placeholder="Honza" required />
+          <div class="form__list">
+            <!-- NAME INPUT -->
+            <div class="form__item">
+              <label class="form__label" for="fname">Jméno*</label>
+              <input class="form__input" type="text" id="fname" name="fname" placeholder="Honza" required />
+            </div>
+            <!-- EMAIL INPUT -->
+            <div class="form__item">
+              <label class="form__label" for="email">Email*</label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="honza.novotny@email.cz"
+                pattern=".*\..*"
+                required
+              />
+            </div>
+            <!-- TEL INPUT -->
+            <div class="form__item">
+              <label class="form__label" for="phone">Telefon</label>
+              <input
+                class="form__input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="763254342"
+                pattern="\+?[0-9]{9,12}"
+              />
+            </div>
+            <!-- TEXTAREA INPUT -->
+            <div class="form__item form__item--textarea">
+              <label class="form__label" for="message">Zpráva*</label>
+              <textarea
+                class="form__input form__input--textarea"
+                id="message"
+                name="message"
+                rows="6"
+                cols="30"
+                placeholder="Zde zadejte svou zprávu"
+                minlength="10"
+                required
+              ></textarea>
+            </div>
           </div>
-          <!-- EMAIL INPUT -->
-          <div class="form__item">
-            <label class="form__label" for="email">Email*</label>
-            <input
-              class="form__input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="honza.novotny@email.cz"
-              pattern=".*\..*"
-              required
-            />
-          </div>
-          <!-- TEL INPUT -->
-          <div class="form__item">
-            <label class="form__label" for="phone">Telefon</label>
-            <input
-              class="form__input"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="763254342"
-              pattern="\+?[0-9]{9,12}"
-            />
-          </div>
-          <!-- TEXTAREA INPUT -->
-          <div class="form__item">
-            <label class="form__label" for="message">Zpráva*</label>
-            <textarea
-              class="form__input form__input--textarea"
-              id="message"
-              name="message"
-              rows="6"
-              cols="30"
-              placeholder="Zde zadejte svou zprávu"
-              minlength="10"
-              required
-            ></textarea>
-          </div>
-          <!-- RESET INPUT -->
-          <div class="form__item form__item--button">
-            <input
-              class="form__input form__input--button form__input--reset-button"
-              type="reset"
-              value="Obnovit"
-            />
-          </div>
-          <!-- SUBMIT INPUT -->
-          <div class="form__item form__item--button">
-            <input
-              class="form__input form__input--button form__input--submit-button"
-              type="submit"
-              value="Odeslat zprávu"
-            />
+          <div class="form__list">
+            <!-- RESET INPUT -->
+            <div class="form__item form__item--button">
+              <input
+                class="form__input form__input--button form__input--reset-button"
+                type="reset"
+                value="Obnovit"
+              />
+            </div>
+            <!-- SUBMIT INPUT -->
+            <div class="form__item form__item--button">
+              <input
+                class="form__input form__input--button form__input--submit-button"
+                type="submit"
+                value="Odeslat zprávu"
+              />
+            </div>
           </div>
         </form>
       </section>
